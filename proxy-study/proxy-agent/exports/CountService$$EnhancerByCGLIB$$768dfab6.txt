@@ -1,0 +1,536 @@
+Compiled from "<generated>"
+public class com.yaojinwei.study.proxy.advanced.CountService$$EnhancerByCGLIB$$768dfab6 implements com.yaojinwei.study.proxy.advanced.CountService,net.sf.cglib.proxy.Factory {
+  static void CGLIB$STATICHOOK1();
+    Code:
+       0: new           #21                 // class java/lang/ThreadLocal
+       3: dup
+       4: invokespecial #24                 // Method java/lang/ThreadLocal."<init>":()V
+       7: putstatic     #26                 // Field CGLIB$THREAD_CALLBACKS:Ljava/lang/ThreadLocal;
+      10: iconst_0
+      11: anewarray     #4                  // class java/lang/Object
+      14: putstatic     #48                 // Field CGLIB$emptyArgs:[Ljava/lang/Object;
+      17: ldc           #141                // String com.yaojinwei.study.proxy.advanced.CountService$$EnhancerByCGLIB$$768dfab6
+      19: invokestatic  #147                // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+      22: astore_0
+      23: bipush        10
+      25: anewarray     #86                 // class java/lang/String
+      28: dup
+      29: iconst_0
+      30: ldc           #148                // String finalize
+      32: aastore
+      33: dup
+      34: iconst_1
+      35: ldc           #149                // String ()V
+      37: aastore
+      38: dup
+      39: iconst_2
+      40: ldc           #150                // String equals
+      42: aastore
+      43: dup
+      44: iconst_3
+      45: ldc           #151                // String (Ljava/lang/Object;)Z
+      47: aastore
+      48: dup
+      49: iconst_4
+      50: ldc           #152                // String toString
+      52: aastore
+      53: dup
+      54: iconst_5
+      55: ldc           #153                // String ()Ljava/lang/String;
+      57: aastore
+      58: dup
+      59: bipush        6
+      61: ldc           #154                // String hashCode
+      63: aastore
+      64: dup
+      65: bipush        7
+      67: ldc           #155                // String ()I
+      69: aastore
+      70: dup
+      71: bipush        8
+      73: ldc           #156                // String clone
+      75: aastore
+      76: dup
+      77: bipush        9
+      79: ldc           #157                // String ()Ljava/lang/Object;
+      81: aastore
+      82: ldc           #159                // String java.lang.Object
+      84: invokestatic  #147                // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+      87: dup
+      88: astore_1
+      89: invokevirtual #163                // Method java/lang/Class.getDeclaredMethods:()[Ljava/lang/reflect/Method;
+      92: invokestatic  #169                // Method net/sf/cglib/core/ReflectUtils.findMethods:([Ljava/lang/String;[Ljava/lang/reflect/Method;)[Ljava/lang/reflect/Method;
+      95: dup
+      96: iconst_0
+      97: aaload
+      98: putstatic     #46                 // Field CGLIB$finalize$0$Method:Ljava/lang/reflect/Method;
+     101: aload_1
+     102: aload_0
+     103: ldc           #149                // String ()V
+     105: ldc           #148                // String finalize
+     107: ldc           #170                // String CGLIB$finalize$0
+     109: invokestatic  #176                // Method net/sf/cglib/proxy/MethodProxy.create:(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lnet/sf/cglib/proxy/MethodProxy;
+     112: putstatic     #50                 // Field CGLIB$finalize$0$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+     115: dup
+     116: iconst_1
+     117: aaload
+     118: putstatic     #65                 // Field CGLIB$equals$1$Method:Ljava/lang/reflect/Method;
+     121: aload_1
+     122: aload_0
+     123: ldc           #151                // String (Ljava/lang/Object;)Z
+     125: ldc           #150                // String equals
+     127: ldc           #177                // String CGLIB$equals$1
+     129: invokestatic  #176                // Method net/sf/cglib/proxy/MethodProxy.create:(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lnet/sf/cglib/proxy/MethodProxy;
+     132: putstatic     #67                 // Field CGLIB$equals$1$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+     135: dup
+     136: iconst_2
+     137: aaload
+     138: putstatic     #82                 // Field CGLIB$toString$2$Method:Ljava/lang/reflect/Method;
+     141: aload_1
+     142: aload_0
+     143: ldc           #153                // String ()Ljava/lang/String;
+     145: ldc           #152                // String toString
+     147: ldc           #178                // String CGLIB$toString$2
+     149: invokestatic  #176                // Method net/sf/cglib/proxy/MethodProxy.create:(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lnet/sf/cglib/proxy/MethodProxy;
+     152: putstatic     #84                 // Field CGLIB$toString$2$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+     155: dup
+     156: iconst_3
+     157: aaload
+     158: putstatic     #95                 // Field CGLIB$hashCode$3$Method:Ljava/lang/reflect/Method;
+     161: aload_1
+     162: aload_0
+     163: ldc           #155                // String ()I
+     165: ldc           #154                // String hashCode
+     167: ldc           #179                // String CGLIB$hashCode$3
+     169: invokestatic  #176                // Method net/sf/cglib/proxy/MethodProxy.create:(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lnet/sf/cglib/proxy/MethodProxy;
+     172: putstatic     #97                 // Field CGLIB$hashCode$3$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+     175: dup
+     176: iconst_4
+     177: aaload
+     178: putstatic     #113                // Field CGLIB$clone$4$Method:Ljava/lang/reflect/Method;
+     181: aload_1
+     182: aload_0
+     183: ldc           #157                // String ()Ljava/lang/Object;
+     185: ldc           #156                // String clone
+     187: ldc           #180                // String CGLIB$clone$4
+     189: invokestatic  #176                // Method net/sf/cglib/proxy/MethodProxy.create:(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lnet/sf/cglib/proxy/MethodProxy;
+     192: putstatic     #115                // Field CGLIB$clone$4$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+     195: pop
+     196: iconst_2
+     197: anewarray     #86                 // class java/lang/String
+     200: dup
+     201: iconst_0
+     202: ldc           #181                // String count
+     204: aastore
+     205: dup
+     206: iconst_1
+     207: ldc           #155                // String ()I
+     209: aastore
+     210: ldc           #183                // String com.yaojinwei.study.proxy.advanced.CountService
+     212: invokestatic  #147                // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+     215: dup
+     216: astore_1
+     217: invokevirtual #163                // Method java/lang/Class.getDeclaredMethods:()[Ljava/lang/reflect/Method;
+     220: invokestatic  #169                // Method net/sf/cglib/core/ReflectUtils.findMethods:([Ljava/lang/String;[Ljava/lang/reflect/Method;)[Ljava/lang/reflect/Method;
+     223: dup
+     224: iconst_0
+     225: aaload
+     226: putstatic     #123                // Field CGLIB$count$5$Method:Ljava/lang/reflect/Method;
+     229: aload_1
+     230: aload_0
+     231: ldc           #155                // String ()I
+     233: ldc           #181                // String count
+     235: ldc           #184                // String CGLIB$count$5
+     237: invokestatic  #176                // Method net/sf/cglib/proxy/MethodProxy.create:(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lnet/sf/cglib/proxy/MethodProxy;
+     240: putstatic     #125                // Field CGLIB$count$5$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+     243: pop
+     244: return
+     245: return
+
+  final void CGLIB$finalize$0() throws java.lang.Throwable;
+    Code:
+       0: aload_0
+       1: invokespecial #38                 // Method java/lang/Object.finalize:()V
+       4: return
+
+  protected final void finalize() throws java.lang.Throwable;
+    Code:
+       0: aload_0
+       1: getfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #44                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+      17: dup
+      18: ifnull        37
+      21: aload_0
+      22: getstatic     #46                 // Field CGLIB$finalize$0$Method:Ljava/lang/reflect/Method;
+      25: getstatic     #48                 // Field CGLIB$emptyArgs:[Ljava/lang/Object;
+      28: getstatic     #50                 // Field CGLIB$finalize$0$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+      31: invokeinterface #56,  5           // InterfaceMethod net/sf/cglib/proxy/MethodInterceptor.intercept:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;Lnet/sf/cglib/proxy/MethodProxy;)Ljava/lang/Object;
+      36: return
+      37: aload_0
+      38: invokespecial #38                 // Method java/lang/Object.finalize:()V
+      41: return
+
+  final boolean CGLIB$equals$1(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #63                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+       5: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+       0: aload_0
+       1: getfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #44                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+      17: dup
+      18: ifnull        57
+      21: aload_0
+      22: getstatic     #65                 // Field CGLIB$equals$1$Method:Ljava/lang/reflect/Method;
+      25: iconst_1
+      26: anewarray     #4                  // class java/lang/Object
+      29: dup
+      30: iconst_0
+      31: aload_1
+      32: aastore
+      33: getstatic     #67                 // Field CGLIB$equals$1$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+      36: invokeinterface #56,  5           // InterfaceMethod net/sf/cglib/proxy/MethodInterceptor.intercept:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;Lnet/sf/cglib/proxy/MethodProxy;)Ljava/lang/Object;
+      41: dup
+      42: ifnonnull     50
+      45: pop
+      46: iconst_0
+      47: goto          56
+      50: checkcast     #69                 // class java/lang/Boolean
+      53: invokevirtual #73                 // Method java/lang/Boolean.booleanValue:()Z
+      56: ireturn
+      57: aload_0
+      58: aload_1
+      59: invokespecial #63                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      62: ireturn
+
+  final java.lang.String CGLIB$toString$2();
+    Code:
+       0: aload_0
+       1: invokespecial #80                 // Method java/lang/Object.toString:()Ljava/lang/String;
+       4: areturn
+
+  public final java.lang.String toString();
+    Code:
+       0: aload_0
+       1: getfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #44                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+      17: dup
+      18: ifnull        40
+      21: aload_0
+      22: getstatic     #82                 // Field CGLIB$toString$2$Method:Ljava/lang/reflect/Method;
+      25: getstatic     #48                 // Field CGLIB$emptyArgs:[Ljava/lang/Object;
+      28: getstatic     #84                 // Field CGLIB$toString$2$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+      31: invokeinterface #56,  5           // InterfaceMethod net/sf/cglib/proxy/MethodInterceptor.intercept:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;Lnet/sf/cglib/proxy/MethodProxy;)Ljava/lang/Object;
+      36: checkcast     #86                 // class java/lang/String
+      39: areturn
+      40: aload_0
+      41: invokespecial #80                 // Method java/lang/Object.toString:()Ljava/lang/String;
+      44: areturn
+
+  final int CGLIB$hashCode$3();
+    Code:
+       0: aload_0
+       1: invokespecial #93                 // Method java/lang/Object.hashCode:()I
+       4: ireturn
+
+  public final int hashCode();
+    Code:
+       0: aload_0
+       1: getfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #44                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+      17: dup
+      18: ifnull        52
+      21: aload_0
+      22: getstatic     #95                 // Field CGLIB$hashCode$3$Method:Ljava/lang/reflect/Method;
+      25: getstatic     #48                 // Field CGLIB$emptyArgs:[Ljava/lang/Object;
+      28: getstatic     #97                 // Field CGLIB$hashCode$3$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+      31: invokeinterface #56,  5           // InterfaceMethod net/sf/cglib/proxy/MethodInterceptor.intercept:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;Lnet/sf/cglib/proxy/MethodProxy;)Ljava/lang/Object;
+      36: dup
+      37: ifnonnull     45
+      40: pop
+      41: iconst_0
+      42: goto          51
+      45: checkcast     #99                 // class java/lang/Number
+      48: invokevirtual #102                // Method java/lang/Number.intValue:()I
+      51: ireturn
+      52: aload_0
+      53: invokespecial #93                 // Method java/lang/Object.hashCode:()I
+      56: ireturn
+
+  final java.lang.Object CGLIB$clone$4() throws java.lang.CloneNotSupportedException;
+    Code:
+       0: aload_0
+       1: invokespecial #111                // Method java/lang/Object.clone:()Ljava/lang/Object;
+       4: areturn
+
+  protected final java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+    Code:
+       0: aload_0
+       1: getfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #44                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+      17: dup
+      18: ifnull        37
+      21: aload_0
+      22: getstatic     #113                // Field CGLIB$clone$4$Method:Ljava/lang/reflect/Method;
+      25: getstatic     #48                 // Field CGLIB$emptyArgs:[Ljava/lang/Object;
+      28: getstatic     #115                // Field CGLIB$clone$4$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+      31: invokeinterface #56,  5           // InterfaceMethod net/sf/cglib/proxy/MethodInterceptor.intercept:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;Lnet/sf/cglib/proxy/MethodProxy;)Ljava/lang/Object;
+      36: areturn
+      37: aload_0
+      38: invokespecial #111                // Method java/lang/Object.clone:()Ljava/lang/Object;
+      41: areturn
+
+  final int CGLIB$count$5();
+    Code:
+       0: aload_0
+       1: invokespecial #121                // Method java/lang/Object.count:()I
+       4: ireturn
+
+  public final int count();
+    Code:
+       0: aload_0
+       1: getfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #44                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+      17: dup
+      18: ifnull        52
+      21: aload_0
+      22: getstatic     #123                // Field CGLIB$count$5$Method:Ljava/lang/reflect/Method;
+      25: getstatic     #48                 // Field CGLIB$emptyArgs:[Ljava/lang/Object;
+      28: getstatic     #125                // Field CGLIB$count$5$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+      31: invokeinterface #56,  5           // InterfaceMethod net/sf/cglib/proxy/MethodInterceptor.intercept:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;Lnet/sf/cglib/proxy/MethodProxy;)Ljava/lang/Object;
+      36: dup
+      37: ifnonnull     45
+      40: pop
+      41: iconst_0
+      42: goto          51
+      45: checkcast     #99                 // class java/lang/Number
+      48: invokevirtual #102                // Method java/lang/Number.intValue:()I
+      51: ireturn
+      52: aload_0
+      53: invokespecial #121                // Method java/lang/Object.count:()I
+      56: ireturn
+
+  public static net.sf.cglib.proxy.MethodProxy CGLIB$findMethodProxy(net.sf.cglib.core.Signature);
+    Code:
+       0: aload_0
+       1: invokevirtual #80                 // Method java/lang/Object.toString:()Ljava/lang/String;
+       4: dup
+       5: invokevirtual #93                 // Method java/lang/Object.hashCode:()I
+       8: lookupswitch  { // 6
+           -1574182249: 68
+            -508378822: 80
+            -372081671: 92
+            1826985398: 104
+            1913648695: 116
+            1984935277: 128
+               default: 140
+          }
+      68: ldc           #129                // String finalize()V
+      70: invokevirtual #63                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      73: ifeq          141
+      76: getstatic     #50                 // Field CGLIB$finalize$0$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+      79: areturn
+      80: ldc           #131                // String clone()Ljava/lang/Object;
+      82: invokevirtual #63                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      85: ifeq          141
+      88: getstatic     #115                // Field CGLIB$clone$4$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+      91: areturn
+      92: ldc           #133                // String count()I
+      94: invokevirtual #63                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      97: ifeq          141
+     100: getstatic     #125                // Field CGLIB$count$5$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+     103: areturn
+     104: ldc           #135                // String equals(Ljava/lang/Object;)Z
+     106: invokevirtual #63                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+     109: ifeq          141
+     112: getstatic     #67                 // Field CGLIB$equals$1$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+     115: areturn
+     116: ldc           #137                // String toString()Ljava/lang/String;
+     118: invokevirtual #63                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+     121: ifeq          141
+     124: getstatic     #84                 // Field CGLIB$toString$2$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+     127: areturn
+     128: ldc           #139                // String hashCode()I
+     130: invokevirtual #63                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+     133: ifeq          141
+     136: getstatic     #97                 // Field CGLIB$hashCode$3$Proxy:Lnet/sf/cglib/proxy/MethodProxy;
+     139: areturn
+     140: pop
+     141: aconst_null
+     142: areturn
+
+  public com.yaojinwei.study.proxy.advanced.CountService$$EnhancerByCGLIB$$768dfab6();
+    Code:
+       0: aload_0
+       1: dup
+       2: invokespecial #185                // Method java/lang/Object."<init>":()V
+       5: invokestatic  #44                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+       8: return
+
+  public static void CGLIB$SET_THREAD_CALLBACKS(net.sf.cglib.proxy.Callback[]);
+    Code:
+       0: getstatic     #26                 // Field CGLIB$THREAD_CALLBACKS:Ljava/lang/ThreadLocal;
+       3: aload_0
+       4: invokevirtual #190                // Method java/lang/ThreadLocal.set:(Ljava/lang/Object;)V
+       7: return
+
+  public static void CGLIB$SET_STATIC_CALLBACKS(net.sf.cglib.proxy.Callback[]);
+    Code:
+       0: aload_0
+       1: putstatic     #193                // Field CGLIB$STATIC_CALLBACKS:[Lnet/sf/cglib/proxy/Callback;
+       4: return
+
+  public java.lang.Object newInstance(net.sf.cglib.proxy.Callback[]);
+    Code:
+       0: aload_1
+       1: invokestatic  #203                // Method CGLIB$SET_THREAD_CALLBACKS:([Lnet/sf/cglib/proxy/Callback;)V
+       4: new           #2                  // class com/yaojinwei/study/proxy/advanced/CountService$$EnhancerByCGLIB$$768dfab6
+       7: dup
+       8: invokespecial #204                // Method "<init>":()V
+      11: aconst_null
+      12: invokestatic  #203                // Method CGLIB$SET_THREAD_CALLBACKS:([Lnet/sf/cglib/proxy/Callback;)V
+      15: areturn
+
+  public java.lang.Object newInstance(net.sf.cglib.proxy.Callback);
+    Code:
+       0: iconst_1
+       1: anewarray     #207                // class net/sf/cglib/proxy/Callback
+       4: dup
+       5: iconst_0
+       6: aload_1
+       7: aastore
+       8: invokestatic  #203                // Method CGLIB$SET_THREAD_CALLBACKS:([Lnet/sf/cglib/proxy/Callback;)V
+      11: new           #2                  // class com/yaojinwei/study/proxy/advanced/CountService$$EnhancerByCGLIB$$768dfab6
+      14: dup
+      15: invokespecial #204                // Method "<init>":()V
+      18: aconst_null
+      19: invokestatic  #203                // Method CGLIB$SET_THREAD_CALLBACKS:([Lnet/sf/cglib/proxy/Callback;)V
+      22: areturn
+
+  public java.lang.Object newInstance(java.lang.Class[], java.lang.Object[], net.sf.cglib.proxy.Callback[]);
+    Code:
+       0: aload_3
+       1: invokestatic  #203                // Method CGLIB$SET_THREAD_CALLBACKS:([Lnet/sf/cglib/proxy/Callback;)V
+       4: new           #2                  // class com/yaojinwei/study/proxy/advanced/CountService$$EnhancerByCGLIB$$768dfab6
+       7: dup
+       8: aload_1
+       9: dup
+      10: arraylength
+      11: tableswitch   { // 0 to 0
+                     0: 28
+               default: 35
+          }
+      28: pop
+      29: invokespecial #204                // Method "<init>":()V
+      32: goto          49
+      35: goto          38
+      38: pop
+      39: new           #210                // class java/lang/IllegalArgumentException
+      42: dup
+      43: ldc           #212                // String Constructor not found
+      45: invokespecial #215                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      48: athrow
+      49: aconst_null
+      50: invokestatic  #203                // Method CGLIB$SET_THREAD_CALLBACKS:([Lnet/sf/cglib/proxy/Callback;)V
+      53: areturn
+
+  public net.sf.cglib.proxy.Callback getCallback(int);
+    Code:
+       0: aload_0
+       1: invokestatic  #44                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+       4: aload_0
+       5: iload_1
+       6: tableswitch   { // 0 to 0
+                     0: 24
+               default: 30
+          }
+      24: getfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+      27: goto          32
+      30: pop
+      31: aconst_null
+      32: areturn
+
+  public void setCallback(int, net.sf.cglib.proxy.Callback);
+    Code:
+       0: iload_1
+       1: tableswitch   { // 0 to 0
+                     0: 20
+               default: 31
+          }
+      20: aload_0
+      21: aload_2
+      22: checkcast     #52                 // class net/sf/cglib/proxy/MethodInterceptor
+      25: putfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+      28: goto          31
+      31: return
+
+  public net.sf.cglib.proxy.Callback[] getCallbacks();
+    Code:
+       0: aload_0
+       1: invokestatic  #44                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+       4: aload_0
+       5: iconst_1
+       6: anewarray     #207                // class net/sf/cglib/proxy/Callback
+       9: dup
+      10: iconst_0
+      11: aload_0
+      12: getfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+      15: aastore
+      16: areturn
+
+  public void setCallbacks(net.sf.cglib.proxy.Callback[]);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: dup2
+       3: iconst_0
+       4: aaload
+       5: checkcast     #52                 // class net/sf/cglib/proxy/MethodInterceptor
+       8: putfield      #40                 // Field CGLIB$CALLBACK_0:Lnet/sf/cglib/proxy/MethodInterceptor;
+      11: return
+
+  static {};
+    Code:
+       0: invokestatic  #225                // Method CGLIB$STATICHOOK1:()V
+       3: return
+}

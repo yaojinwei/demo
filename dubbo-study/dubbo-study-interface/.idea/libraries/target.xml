@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="target">
+    <CLASSES>
+      <root url="file://D:/letv/leNetworkFinanceTrader/git/le-dubbo/dubbo/target" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://D:/letv/leNetworkFinanceTrader/git/le-dubbo/dubbo/target" />
+    </SOURCES>
+    <jarDirectory url="file://D:/letv/leNetworkFinanceTrader/git/le-dubbo/dubbo/target" recursive="false" />
+    <jarDirectory url="file://D:/letv/leNetworkFinanceTrader/git/le-dubbo/dubbo/target" recursive="false" type="SOURCES" />
+  </library>
+</component>

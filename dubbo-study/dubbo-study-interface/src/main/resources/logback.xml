@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss} [%-5level] [%thread] %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.dir}/trade-member.log</file>
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss} [%-5level] [%thread] %logger - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${log.dir}/trade-member.log.%d.gz</fileNamePattern>
+        </rollingPolicy>
+    </appender>
+
+    <logger name="org.apache.thrift.transport">
+        <level value="WARN"/>
+    </logger>
+
+    <root level="${log.tracker.level}">
+        <appender-ref ref="${log.Appender}"/>
+    </root>
+
+</configuration>
