@@ -11,6 +11,7 @@
     <modules>
         <module>design-singleton</module>
         <module>design-factory</module>
+        <module>design-builder</module>
     </modules>
 
 
