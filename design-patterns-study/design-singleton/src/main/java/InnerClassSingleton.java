@@ -5,7 +5,15 @@
  * Created by yaojinwei on 2016/9/20.
  */
 public class InnerClassSingleton {
-    private InnerClassSingleton innerClassSingleton = null;
+    private InnerClassSingleton(){
+        System.out.println("InnerClassSingleton construct!");
+    }
 
-    public static
+    private static class SignletonHolder{
+        private static InnerClassSingleton innerClassSingleton = new InnerClassSingleton();
+    }
+
+    public static InnerClassSingleton getInstance(){
+        return SignletonHolder.innerClassSingleton;
+    }
 }

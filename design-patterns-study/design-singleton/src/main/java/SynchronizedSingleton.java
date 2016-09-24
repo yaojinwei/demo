@@ -8,7 +8,7 @@ public class SynchronizedSingleton {
     private static SynchronizedSingleton singleton;
 
     private SynchronizedSingleton(){
-        System.out.println("StaticSingleton construct!");
+        System.out.println("SynchronizedSingleton construct!");
     }
 
     public static SynchronizedSingleton getInstance(){
@@ -18,18 +18,4 @@ public class SynchronizedSingleton {
         return singleton;
     }
 
-    /**
-     * 同步代码块，双重检查锁
-     * @return
-     */
-    public static SynchronizedSingleton getInstance2(){
-        if(singleton == null){
-            synchronized (SynchronizedSingleton.class){
-                if(singleton == null){
-                    singleton = new SynchronizedSingleton();
-                }
-            }
-        }
-        return singleton;
-    }
 }
