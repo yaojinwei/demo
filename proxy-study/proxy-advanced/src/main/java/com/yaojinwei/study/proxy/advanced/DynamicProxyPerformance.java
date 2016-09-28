@@ -19,6 +19,8 @@ import java.lang.reflect.Proxy;
 import java.text.DecimalFormat;
 
 /**
+ * http://javatar.iteye.com/blog/814426
+ *
  * Created by kingtakepc on 2016/9/14.
  */
 public class DynamicProxyPerformance {

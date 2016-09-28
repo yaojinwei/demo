@@ -12,6 +12,8 @@
         <module>design-singleton</module>
         <module>design-factory</module>
         <module>design-builder</module>
+        <module>design-proxy</module>
+        <module>design-facade</module>
     </modules>
 
 
