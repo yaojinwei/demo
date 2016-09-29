@@ -6,4 +6,19 @@
  * @since 2016/9/28
  */
 public class Client {
+    public static void main(String[] args) {
+        Equipment cpu = new Equipment(1000);
+        Equipment disk = new Equipment(500);
+        Equipment ram = new Equipment(200);
+        Equipment keyboard = new Equipment(150);
+
+        //组装电脑，组装费100
+        Equipment compute = new Equipment(100);
+        compute.add(cpu);
+        compute.add(disk);
+        compute.add(ram);
+        compute.add(keyboard);
+
+        System.out.println("电脑总价格：" + compute.price());
+    }
 }
