@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/proxy-common/common.iml" filepath="$PROJECT_DIR$/proxy-common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxy-begin/introductory.iml" filepath="$PROJECT_DIR$/proxy-begin/introductory.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxy-advanced/proxy-advanced.iml" filepath="$PROJECT_DIR$/proxy-advanced/proxy-advanced.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxy-agent/proxy-agent.iml" filepath="$PROJECT_DIR$/proxy-agent/proxy-agent.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxy-begin/proxy-begin.iml" filepath="$PROJECT_DIR$/proxy-begin/proxy-begin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/proxy-common/common.iml" filepath="$PROJECT_DIR$/proxy-common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxy-study.iml" filepath="$PROJECT_DIR$/proxy-study.iml" />
     </modules>
   </component>
