@@ -15,6 +15,7 @@
         <module>design-proxy</module>
         <module>design-facade</module>
         <module>design-composite</module>
+        <module>design-decorator</module>
     </modules>
 
 
