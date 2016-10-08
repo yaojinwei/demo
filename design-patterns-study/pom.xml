@@ -16,6 +16,7 @@
         <module>design-facade</module>
         <module>design-composite</module>
         <module>design-decorator</module>
+        <module>design-adapter</module>
     </modules>
 
 
