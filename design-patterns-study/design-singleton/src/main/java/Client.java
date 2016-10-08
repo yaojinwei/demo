@@ -2,7 +2,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * Created by kingtakepc on 2016/9/20.
+ * 单例模式
+ *
+ * Created by yaojinwei on 2016/9/20.
  */
 public class Client {
     public static void main(String[] args) {
