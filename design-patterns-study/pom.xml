@@ -21,6 +21,7 @@
         <module>design-flyweight</module>
         <module>design-command</module>
         <module>design-observer</module>
+        <module>design-template</module>
     </modules>
 
     <build>
