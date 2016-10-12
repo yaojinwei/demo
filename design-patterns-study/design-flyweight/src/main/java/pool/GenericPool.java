@@ -147,7 +147,7 @@ public class GenericPool<T> implements ObjectPool<T>{
             detroy(p);
         }
         else{
-            idleObjects.put(p);
+            idleObjects.add(p);
 //            System.out.println("idleObjects.put");
 //            System.out.println(idleObjects.size());
         }

@@ -16,16 +16,16 @@ import java.util.concurrent.Executors;
 public class Client {
 
     public static void main(String[] args) {
-        ExecutorService executorService = Executors.newFixedThreadPool(100);
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
         GenericPool<DataConnection> pool = new GenericPool<>(new DataConnectionFactory());
-
+        
 //        GenericObjectPool pool = new GenericObjectPool(new DataConnectionFactory2());
 
         for(int i = 0;i<100;i++){
             System.out.println(i);
             executorService.submit(new Task(pool, i));
         }
-        executorService.shutdown();
+//        executorService.shutdown();
 
         new Scanner(System.in).nextLine();
     }
