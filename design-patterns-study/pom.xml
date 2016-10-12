@@ -20,6 +20,7 @@
         <module>design-bridge</module>
         <module>design-flyweight</module>
         <module>design-command</module>
+        <module>design-observer</module>
     </modules>
 
     <build>
