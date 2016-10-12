@@ -19,6 +19,7 @@
         <module>design-adapter</module>
         <module>design-bridge</module>
         <module>design-flyweight</module>
+        <module>design-command</module>
     </modules>
 
     <build>
