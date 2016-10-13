@@ -6,4 +6,7 @@
  * @Copyright(c) Beijing LeFinance Software Co.,LTD
  */
 public class Client {
+    public static void main(String[] args) {
+
+    }
 }
