@@ -22,6 +22,7 @@
         <module>design-command</module>
         <module>design-observer</module>
         <module>design-template</module>
+        <module>design-strategy</module>
     </modules>
 
     <build>
