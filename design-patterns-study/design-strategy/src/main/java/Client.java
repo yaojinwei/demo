@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 /**
  * 策略模式
  * 定义一系列的算法,把每一个算法封装起来, 并且使它们可相互替换。
@@ -17,5 +22,43 @@ public class Client {
         TravelStrategy travelStrategy = new TrainStrategy();
         Person person = new Person(travelStrategy);
         person.travel();
+
+        List list = new ArrayList();
+        for(int i=0;i<100;i++){
+            list.add(i);
+        }
+
+        //设置按从左到右顺序比较大小
+       Collections.sort(list, new Comparator() {
+            @Override
+            public int compare(Object o1, Object o2) {
+                String str1 = o1.toString();
+                String str2 = o2.toString();
+                int len1 = str1.length();
+                int len2 = str2.length();
+
+                for(int i= 0 ;i< Math.max(len1, len2);i++){
+                    int a = 0;
+                    int b = 0;
+                    if(i<len1 ){
+                        a = Integer.parseInt(str1.substring(i, i + 1));
+                    }
+                    if(i<len2){
+                        b = Integer.parseInt(str2.substring(i, i + 1));
+                    }
+                    if(a>b){
+                        return 1;
+                    }
+                    else if(a<b){
+                        return -1;
+                    }
+                }
+                return 0;
+            }
+        });
+
+        for(int i=0;i<list.size();i++){
+            System.out.println(list.get(i));
+        }
     }
 }

@@ -23,6 +23,7 @@
         <module>design-observer</module>
         <module>design-template</module>
         <module>design-strategy</module>
+        <module>design-chain</module>
     </modules>
 
     <build>
