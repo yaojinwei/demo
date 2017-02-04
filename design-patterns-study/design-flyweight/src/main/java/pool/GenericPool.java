@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * @author yaojinwei<yjw0909@gmail.com>d
  * @since 2016/10/10
  */
-public class GenericPool<T> implements ObjectPool<T>{
+public class GenericPool<T> implements Pool<T> {
 
     private static final int DEFAULT_MAX_WAIT_MILLIS = 30000;
 
