@@ -1,5 +1,5 @@
 /**
- * 懒汉式--双检锁
+ * 懒汉式
  * http://blog.csdn.net/lg312200538/article/details/4930451
  *
  * Created by yaojinwei on 2016/9/20.

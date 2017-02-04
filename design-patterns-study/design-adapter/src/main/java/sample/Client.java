@@ -18,4 +18,12 @@ public class Client {
         //手机充电
         phone.charge();
     }
+    public void invoke(){
+
+    }
+    protected class Inner{
+        public void run(){
+            invoke();
+        }
+    }
 }
