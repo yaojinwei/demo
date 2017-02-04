@@ -1,0 +1,10 @@
+<settings>
+    <localRepository>C:\Users\yaojinwei\.m2\repository</localRepository>
+    <servers>
+        <server>
+            <id>releases</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>
+    </servers>
+</settings>
