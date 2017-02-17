@@ -11,7 +11,7 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
-        ClassPathXmlApplicationContext context = new  ClassPathXmlApplicationContext("beans.xml");
+        ClassPathXmlApplicationContext context = new  ClassPathXmlApplicationContext("spring-dubbo-provider.xml");
         context.start();
     }
 }

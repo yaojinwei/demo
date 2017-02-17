@@ -69,12 +69,7 @@
         <groupId>com.yaojinwei.study</groupId>
         <artifactId>dubbo-study-interface</artifactId>
         <version>0.0.3-SNAPSHOT</version>
-        <exclusions>
-            <exclusion>
-                <groupId>com.alibaba</groupId>
-                <artifactId>dubbo</artifactId>
-            </exclusion>
-        </exclusions>
+
     </dependency>
       <dependency>
           <groupId>org.springframework</groupId>
@@ -92,6 +87,12 @@
           <groupId>com.le.jr</groupId>
           <artifactId>trade-usercenter-interfaces</artifactId>
           <version>0.0.2-SNAPSHOT</version>
+          <exclusions>
+              <exclusion>
+                  <groupId>com.alibaba</groupId>
+                  <artifactId>dubbo</artifactId>
+              </exclusion>
+          </exclusions>
       </dependency>
   </dependencies>
 

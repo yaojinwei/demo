@@ -17,7 +17,7 @@
     <dubbo:consumer  version="1.0" />
 
     <!-- 声明引用的服务接口 -->
-    <dubbo:reference interface="com.yaojinwei.study.dubbo.interfaces.SpeakInterface" id="speakInterface"/>
+    <dubbo:reference interface="com.yaojinwei.study.dubbo.interfaces.SpeakInterface" id="speakInterface" mock="force:return+null"/>
 
     <dubbo:reference interface="com.le.jr.trade.usercenter.interfaces.UserInterfaces" id="userInterfaces"/>
 
