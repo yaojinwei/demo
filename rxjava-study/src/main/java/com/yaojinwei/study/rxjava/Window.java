@@ -26,22 +26,17 @@ public class Window {
         Observable.range(1, 30).window(3, 1).flatMap(new Func1<Observable<Integer>, Observable<Integer>>() {
             @Override
             public Observable<Integer> call(Observable<Integer> integerObservable) {
-                return integerObservable.scan(0,new Func2<Integer, Integer, Integer>() {
+                return integerObservable.scan(0, new Func2<Integer, Integer, Integer>() {
                     @Override
                     public Integer call(Integer integer, Integer integer2) {
                         return integer + integer2;
                     }
                 }).skip(3);
             }
-        }).subscribe(new Action1<Integer>() {
-            @Override
-            public void call(Integer integer) {
-                System.out.println(integer);
-            }
-        });
+        }).share().onBackpressureDrop()
+                .subscribe(conterSubject);
         Thread.sleep(1000);
         System.out.println(conterSubject.getValue());
     }
-
 
 }
