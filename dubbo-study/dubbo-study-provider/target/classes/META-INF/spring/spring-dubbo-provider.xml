@@ -15,7 +15,7 @@
     <dubbo:registry id="zk1" address="zookeeper://127.0.0.1:2181"/>
 
     <!-- 用dubbo端口自动分配 -->
-    <dubbo:protocol id="mydubbo" name="dubbo" port="20887" threads="500" serialization=""/>
+    <dubbo:protocol id="mydubbo" name="dubbo" port="20881" threads="500" serialization=""/>
 
     <dubbo:provider id="provider" timeout="3000" retries="2" registry="zk1" protocol="mydubbo" />
 
