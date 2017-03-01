@@ -5,7 +5,7 @@ package com.yaojinwei.study.rxjava;
  * @date 2017/2/15 16:52
  * @Copyright(c) Beijing LeFinance Software Co.,LTD
  */
-public class Subject {
+public class SubjectTest {
     public static void main(String[] args) {
 
     }
