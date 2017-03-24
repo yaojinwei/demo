@@ -1,0 +1,10 @@
+<?xml version= "1.0" encoding = "UTF-8"?>
+
+<articles>
+    <article category="xml">
+        <title>XML概述</title>
+        <author>Jerry</author>
+        <email>jerry@yahoo.com</email>
+        <date>2014-10-20</date>
+    </article>
+</articles>
