@@ -13,6 +13,7 @@ public class HelloServer {
     public static void main(String[] args) throws IOException {
         //1、创建一个服务器端Socket，即ServerSocket，指定绑定的端口，并监听此端口
         ServerSocket serverSocket = new ServerSocket(4001);
+
         int num = 0;
         while(true){
             //2、调用accept()方法开始监听，等待客户端的连接
