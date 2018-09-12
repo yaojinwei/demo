@@ -4,6 +4,7 @@ import javassist.*;
 import javassist.util.proxy.MethodHandler;
 import javassist.util.proxy.ProxyFactory;
 import javassist.util.proxy.ProxyObject;
+import net.sf.cglib.core.DebuggingClassWriter;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
@@ -12,11 +13,13 @@ import org.objectweb.asm.FieldVisitor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 
+import java.io.File;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.text.DecimalFormat;
+import java.util.Properties;
 
 /**
  * http://javatar.iteye.com/blog/814426
@@ -26,6 +29,10 @@ import java.text.DecimalFormat;
 public class DynamicProxyPerformance {
     public static void main(String[] args) throws Exception {
         CountService delegate = new CountServiceImpl();
+//        FileOutputStream fos = new FileOutputStream(new File("").getAbsolutePath());
+        System.out.println(new File("").getAbsolutePath());
+        saveGeneratedJdkProxyFiles();
+        saveGeneratedCGlibProxyFiles();
 
         long time = System.currentTimeMillis();
         CountService jdkProxy = createJdkDynamicProxy(delegate);
@@ -34,6 +41,7 @@ public class DynamicProxyPerformance {
 
         time = System.currentTimeMillis();
         CountService cglibProxy = createCglibDynamicProxy(delegate);
+        CountService cglibProxy2 = createCglibDynamicProxyByInterface(delegate);
         time = System.currentTimeMillis() - time;
         System.out.println("Create CGLIB Proxy: " + time + " ms");
 
@@ -53,14 +61,36 @@ public class DynamicProxyPerformance {
         System.out.println("Create ASM Proxy: " + time + " ms");
         System.out.println("================");
 
-        for (int i = 0; i < 3; i++) {
-            test(jdkProxy, "Run JDK Proxy: ");
-            test(cglibProxy, "Run CGLIB Proxy: ");
-            test(javassistProxy, "Run JAVAASSIST Proxy: ");
-            test(javassistBytecodeProxy, "Run JAVAASSIST Bytecode Proxy: ");
-            test(asmBytecodeProxy, "Run ASM Bytecode Proxy: ");
-            System.out.println("----------------");
-        }
+//        for (int i = 0; i < 3; i++) {
+//            test(jdkProxy, "Run JDK Proxy: ");
+//            test(cglibProxy, "Run CGLIB Proxy: ");
+//            test(javassistProxy, "Run JAVAASSIST Proxy: ");
+//            test(javassistBytecodeProxy, "Run JAVAASSIST Bytecode Proxy: ");
+//            test(asmBytecodeProxy, "Run ASM Bytecode Proxy: ");
+//            System.out.println("----------------");
+//        }
+    }
+
+    /**
+     * 需要添加目录 D:\mygit\demo\proxy-study\com\sun\proxy\
+     * @throws Exception
+     */
+    public static void saveGeneratedJdkProxyFiles() throws Exception {
+
+        Field field = System.class.getDeclaredField("props");
+
+        field.setAccessible(true);
+        Properties props = (Properties) field.get(null);
+        props.put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+    }
+
+    public static void saveGeneratedCGlibProxyFiles() throws Exception {
+
+        Field field = System.class.getDeclaredField("props");
+        field.setAccessible(true);
+        Properties props = (Properties) field.get(null);
+        System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "D:\\mygit\\demo\\proxy-study\\");//dir为保存文件路径
+        props.put("net.sf.cglib.core.DebuggingClassWriter.traceEnabled", "true");
     }
 
     private static void test(CountService service, String label)
@@ -96,6 +126,14 @@ public class DynamicProxyPerformance {
     }
 
     private static CountService createCglibDynamicProxy(final CountService delegate) throws Exception {
+        Enhancer enhancer = new Enhancer();
+        enhancer.setCallback(new CglibInterceptor(delegate));
+        enhancer.setSuperclass(CountServiceImpl.class);
+        CountService cglibProxy = (CountService) enhancer.create();
+        return cglibProxy;
+    }
+
+    private static CountService createCglibDynamicProxyByInterface(final CountService delegate) throws Exception {
         Enhancer enhancer = new Enhancer();
         enhancer.setCallback(new CglibInterceptor(delegate));
         enhancer.setInterfaces(new Class[] { CountService.class });

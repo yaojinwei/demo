@@ -1,0 +1,3 @@
+grant codeBase  "file:/home/h/client/*"   {
+     permission java.io.FilePermission  "/1.txt","read";
+};

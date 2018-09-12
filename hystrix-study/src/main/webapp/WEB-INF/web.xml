@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID" version="2.5">
+    <display-name>trade-noticeadmin-web</display-name>
+
+    <servlet>
+        <description></description>
+        <display-name>HystrixMetricsStreamServlet</display-name>
+        <servlet-name>HystrixMetricsStreamServlet</servlet-name>
+        <servlet-class>com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HystrixMetricsStreamServlet</servlet-name>
+        <url-pattern>/hystrix.stream</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description></description>
+        <display-name>HelloWorldServlet</display-name>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>com.yaojinwei.study.hystrix.servlet.HelloWorldServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/helloworld</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description></description>
+        <display-name>HelloWorldObservableServlet</display-name>
+        <servlet-name>HelloWorldObservableServlet</servlet-name>
+        <servlet-class>com.yaojinwei.study.hystrix.servlet.HelloWorldObservableServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorldObservableServlet</servlet-name>
+        <url-pattern>/helloworldo</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <display-name>HystrixRequestContextServletFilter</display-name>
+        <filter-name>HystrixRequestContextServletFilter</filter-name>
+        <filter-class>com.netflix.hystrix.contrib.requestservlet.HystrixRequestContextServletFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>HystrixRequestContextServletFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+      <display-name>HystrixRequestLogViaLoggerServletFilter</display-name>
+      <filter-name>HystrixRequestLogViaLoggerServletFilter</filter-name>
+      <filter-class>com.netflix.hystrix.contrib.requestservlet.HystrixRequestLogViaLoggerServletFilter</filter-class>
+    </filter>
+    <filter-mapping>
+      <filter-name>HystrixRequestLogViaLoggerServletFilter</filter-name>
+      <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+   <filter>
+     <display-name>HystrixRequestLogViaResponseHeaderServletFilter</display-name>
+     <filter-name>HystrixRequestLogViaResponseHeaderServletFilter</filter-name>
+     <filter-class>com.netflix.hystrix.contrib.requestservlet.HystrixRequestLogViaResponseHeaderServletFilter</filter-class>
+   </filter>
+   <filter-mapping>
+     <filter-name>HystrixRequestLogViaResponseHeaderServletFilter</filter-name>
+     <url-pattern>/*</url-pattern>
+   </filter-mapping>
+
+</web-app>

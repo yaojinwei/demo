@@ -6,6 +6,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 /**
  * Hello world!
  *
@@ -44,12 +47,12 @@ public class App
         }
     }
 
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) throws UnknownHostException {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:root-context.xml");
         context.start();
         App app = new App();
         app.setSpeakInterface((SpeakInterface)context.getBean("speakInterface"));
         app.testEverySecond();
+//        System.out.println( InetAddress.getLocalHost());
     }
 }

@@ -13,11 +13,11 @@
     <!--zookeeper://10.11.145.91:2181?backup=10.11.145.100:2181,10.11.145.103:2181-->
     <!-- zk注册中心配置 -->
     <dubbo:registry id="zk1" address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:protocol host="127.0.0.1" />
+    <dubbo:consumer  version="1.0" retries="10"/>
 
-    <dubbo:consumer  version="1.0" />
-
-    <!-- 声明引用的服务接口 -->
-    <dubbo:reference interface="com.yaojinwei.study.dubbo.interfaces.SpeakInterface" id="speakInterface" mock="force:return+null"/>
+    <!-- 声明引用的服务接口 mock="force:return null"-->
+    <dubbo:reference interface="com.yaojinwei.study.dubbo.interfaces.SpeakInterface" id="speakInterface" />
 
     <dubbo:reference interface="com.le.jr.trade.usercenter.interfaces.UserInterfaces" id="userInterfaces"/>
 

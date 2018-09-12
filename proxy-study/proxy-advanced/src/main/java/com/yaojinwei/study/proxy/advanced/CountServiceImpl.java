@@ -9,4 +9,12 @@ public class CountServiceImpl implements CountService {
     public int count() {
         return cnt++;
     }
+
+    protected int num(){
+        return 1;
+    }
+
+    private int num2(){
+        return 2;
+    }
 }

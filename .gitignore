@@ -1,0 +1,12 @@
+.idea
+*.iml
+target
+*.bak
+.DS_Store
+node_modules
+tmp/**/*
+npm-debug.log
+logs
+run
+*.zip
+*.gz
