@@ -1,0 +1,33 @@
+= Api Documentation
+
+
+[[_overview]]
+== 概览
+Api Documentation
+
+
+=== 版本信息
+[%hardbreaks]
+__版本__ : 1.0
+
+
+=== 许可信息
+[%hardbreaks]
+__许可证__ : Apache 2.0
+__许可网址__ : http://www.apache.org/licenses/LICENSE-2.0
+__服务条款__ : urn:tos
+
+
+=== URI scheme
+[%hardbreaks]
+__域名__ : localhost:8080
+__基础路径__ : /
+
+
+=== 标签
+
+* basic-error-controller : Basic Error Controller
+* user-controller : User Controller
+
+
+

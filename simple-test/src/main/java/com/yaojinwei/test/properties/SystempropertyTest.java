@@ -37,5 +37,7 @@ public class SystempropertyTest {
 
         System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
         System.out.println("环境变量getenv PATH:"+System.getenv("path"));
+
+        System.out.println("env=" + System.getProperty("env"));
     }
 }

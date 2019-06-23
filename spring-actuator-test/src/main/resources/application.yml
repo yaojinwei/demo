@@ -1,0 +1,9 @@
+spring.boot.admin.url: http://localhost:8080/admin
+spring.boot.admin.context-path: /admin
+management.security.enabled: false
+management.context-path: /actuator
+spring:
+  boot:
+    admin:
+      client:
+        management-url: http://localhost:8080/actuator

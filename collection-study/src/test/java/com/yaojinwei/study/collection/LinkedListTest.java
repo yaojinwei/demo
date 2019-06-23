@@ -53,4 +53,21 @@ public class LinkedListTest {
             System.out.println(books.pop());
         }
     }
+
+    public int getInt(){
+        try {
+            Integer result = null;
+            return result;
+        }
+        catch (Exception ex){
+            System.out.println("123123123");
+            return 0;
+        }
+    }
+
+    @Test
+    public void testTryCatch(){
+        System.out.println(getInt());
+    }
+
 }

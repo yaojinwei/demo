@@ -1,0 +1,727 @@
+h1. Api Documentation
+
+
+h2. 概览 {anchor:overview}
+Api Documentation
+
+
+h3. 版本信息
+_版本_ : 1.0
+
+
+h3. 许可信息
+_许可证_ : Apache 2.0\\ 
+_许可网址_ : http://www.apache.org/licenses/LICENSE-2.0\\ 
+_服务条款_ : urn:tos
+
+
+h3. URI scheme
+_域名_ : localhost:8080\\ 
+_基础路径_ : /
+
+
+h3. 标签
+
+* basic-error-controller : Basic Error Controller
+* user-controller : User Controller
+
+
+
+
+h2. 资源 {anchor:paths}
+
+h3. Basic-error-controller {anchor:basic-error-controller_resource}
+Basic Error Controller
+
+
+h4. errorHtml {anchor:errorhtmlusingpost}
+{noformat}
+POST /error
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ModelAndView|#modelandview]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}text/html{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/error
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
+{code}
+
+
+h4. errorHtml {anchor:errorhtmlusingget}
+{noformat}
+GET /error
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ModelAndView|#modelandview]|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}text/html{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/error
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
+{code}
+
+
+h4. errorHtml {anchor:errorhtmlusingput}
+{noformat}
+PUT /error
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ModelAndView|#modelandview]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}text/html{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/error
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
+{code}
+
+
+h4. errorHtml {anchor:errorhtmlusingdelete}
+{noformat}
+DELETE /error
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ModelAndView|#modelandview]|
+|*204*||No Content||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}text/html{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/error
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
+{code}
+
+
+h4. errorHtml {anchor:errorhtmlusingpatch}
+{noformat}
+PATCH /error
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ModelAndView|#modelandview]|
+|*204*||No Content||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}text/html{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/error
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
+{code}
+
+
+h4. errorHtml {anchor:errorhtmlusinghead}
+{noformat}
+HEAD /error
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ModelAndView|#modelandview]|
+|*204*||No Content||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}text/html{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/error
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
+{code}
+
+
+h4. errorHtml {anchor:errorhtmlusingoptions}
+{noformat}
+OPTIONS /error
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ModelAndView|#modelandview]|
+|*204*||No Content||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}text/html{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/error
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
+{code}
+
+
+h3. User-controller {anchor:user-controller_resource}
+User Controller
+
+
+h4. index {anchor:indexusingpost}
+{noformat}
+POST /hello
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||string|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/hello
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"string"
+{code}
+
+
+h4. index {anchor:indexusingget}
+{noformat}
+GET /hello
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||string|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/hello
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"string"
+{code}
+
+
+h4. index {anchor:indexusingput}
+{noformat}
+PUT /hello
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||string|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/hello
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"string"
+{code}
+
+
+h4. index {anchor:indexusingdelete}
+{noformat}
+DELETE /hello
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||string|
+|*204*||No Content||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/hello
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"string"
+{code}
+
+
+h4. index {anchor:indexusingpatch}
+{noformat}
+PATCH /hello
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||string|
+|*204*||No Content||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/hello
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"string"
+{code}
+
+
+h4. index {anchor:indexusinghead}
+{noformat}
+HEAD /hello
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||string|
+|*204*||No Content||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/hello
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"string"
+{code}
+
+
+h4. index {anchor:indexusingoptions}
+{noformat}
+OPTIONS /hello
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||string|
+|*204*||No Content||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/hello
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"string"
+{code}
+
+
+
+
+h2. 定义 {anchor:definitions}
+
+h3. ModelAndView {anchor:modelandview}
+
+||名称||说明||类型||
+|*empty*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*model*\\ \\ _可选_||*样例* : {noformat}"object"{noformat}||object|
+|*modelMap*\\ \\ _可选_||*样例* : {noformat}{\\   "string" : "object"\\ }{noformat}||< string, object > map|
+|*reference*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*status*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||enum (100, 101, 102, 103, 200, 201, 202, 203, 204, 205, 206, 207, 208, 226, 300, 301, 302, 303, 304, 305, 307, 308, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 426, 428, 429, 431, 451, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511)|
+|*view*\\ \\ _可选_||*样例* : {noformat}"[#view]"{noformat}||[View|#view]|
+|*viewName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+
+
+h3. View {anchor:view}
+
+||名称||说明||类型||
+|*contentType*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+
+
+
+
+
