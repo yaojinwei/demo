@@ -5,7 +5,7 @@ h3. Basic-error-controller {anchor:basic-error-controller_resource}
 Basic Error Controller
 
 
-h4. error {anchor:errorusingpost}
+h4. errorHtml {anchor:errorhtmlusingpost}
 {noformat}
 POST /error
 {noformat}
@@ -14,7 +14,7 @@ POST /error
 h5. 响应
 
 ||HTTP代码||说明||类型||
-|*200*||OK||< string, object > map|
+|*200*||OK||[ModelAndView|#modelandview]|
 |*201*||Created||无内容|
 |*401*||Unauthorized||无内容|
 |*403*||Forbidden||无内容|
@@ -28,7 +28,7 @@ h5. 消耗
 
 h5. 生成
 
-* {noformat}*/*{noformat}
+* {noformat}text/html{noformat}
 
 
 h5. HTTP请求示例
@@ -43,11 +43,23 @@ h5. HTTP响应示例
 
 h6. 响应 200
 {code:language=json}
-"object"
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
 {code}
 
 
-h4. error {anchor:errorusingget}
+h4. errorHtml {anchor:errorhtmlusingget}
 {noformat}
 GET /error
 {noformat}
@@ -56,7 +68,7 @@ GET /error
 h5. 响应
 
 ||HTTP代码||说明||类型||
-|*200*||OK||< string, object > map|
+|*200*||OK||[ModelAndView|#modelandview]|
 |*401*||Unauthorized||无内容|
 |*403*||Forbidden||无内容|
 |*404*||Not Found||无内容|
@@ -69,7 +81,7 @@ h5. 消耗
 
 h5. 生成
 
-* {noformat}*/*{noformat}
+* {noformat}text/html{noformat}
 
 
 h5. HTTP请求示例
@@ -84,11 +96,23 @@ h5. HTTP响应示例
 
 h6. 响应 200
 {code:language=json}
-"object"
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
 {code}
 
 
-h4. error {anchor:errorusingput}
+h4. errorHtml {anchor:errorhtmlusingput}
 {noformat}
 PUT /error
 {noformat}
@@ -97,7 +121,7 @@ PUT /error
 h5. 响应
 
 ||HTTP代码||说明||类型||
-|*200*||OK||< string, object > map|
+|*200*||OK||[ModelAndView|#modelandview]|
 |*201*||Created||无内容|
 |*401*||Unauthorized||无内容|
 |*403*||Forbidden||无内容|
@@ -111,7 +135,7 @@ h5. 消耗
 
 h5. 生成
 
-* {noformat}*/*{noformat}
+* {noformat}text/html{noformat}
 
 
 h5. HTTP请求示例
@@ -126,11 +150,23 @@ h5. HTTP响应示例
 
 h6. 响应 200
 {code:language=json}
-"object"
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
 {code}
 
 
-h4. error {anchor:errorusingdelete}
+h4. errorHtml {anchor:errorhtmlusingdelete}
 {noformat}
 DELETE /error
 {noformat}
@@ -139,7 +175,7 @@ DELETE /error
 h5. 响应
 
 ||HTTP代码||说明||类型||
-|*200*||OK||< string, object > map|
+|*200*||OK||[ModelAndView|#modelandview]|
 |*204*||No Content||无内容|
 |*401*||Unauthorized||无内容|
 |*403*||Forbidden||无内容|
@@ -152,7 +188,7 @@ h5. 消耗
 
 h5. 生成
 
-* {noformat}*/*{noformat}
+* {noformat}text/html{noformat}
 
 
 h5. HTTP请求示例
@@ -167,11 +203,23 @@ h5. HTTP响应示例
 
 h6. 响应 200
 {code:language=json}
-"object"
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
 {code}
 
 
-h4. error {anchor:errorusingpatch}
+h4. errorHtml {anchor:errorhtmlusingpatch}
 {noformat}
 PATCH /error
 {noformat}
@@ -180,7 +228,7 @@ PATCH /error
 h5. 响应
 
 ||HTTP代码||说明||类型||
-|*200*||OK||< string, object > map|
+|*200*||OK||[ModelAndView|#modelandview]|
 |*204*||No Content||无内容|
 |*401*||Unauthorized||无内容|
 |*403*||Forbidden||无内容|
@@ -193,7 +241,7 @@ h5. 消耗
 
 h5. 生成
 
-* {noformat}*/*{noformat}
+* {noformat}text/html{noformat}
 
 
 h5. HTTP请求示例
@@ -208,11 +256,23 @@ h5. HTTP响应示例
 
 h6. 响应 200
 {code:language=json}
-"object"
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
 {code}
 
 
-h4. error {anchor:errorusinghead}
+h4. errorHtml {anchor:errorhtmlusinghead}
 {noformat}
 HEAD /error
 {noformat}
@@ -221,7 +281,7 @@ HEAD /error
 h5. 响应
 
 ||HTTP代码||说明||类型||
-|*200*||OK||< string, object > map|
+|*200*||OK||[ModelAndView|#modelandview]|
 |*204*||No Content||无内容|
 |*401*||Unauthorized||无内容|
 |*403*||Forbidden||无内容|
@@ -234,7 +294,7 @@ h5. 消耗
 
 h5. 生成
 
-* {noformat}*/*{noformat}
+* {noformat}text/html{noformat}
 
 
 h5. HTTP请求示例
@@ -249,11 +309,23 @@ h5. HTTP响应示例
 
 h6. 响应 200
 {code:language=json}
-"object"
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
 {code}
 
 
-h4. error {anchor:errorusingoptions}
+h4. errorHtml {anchor:errorhtmlusingoptions}
 {noformat}
 OPTIONS /error
 {noformat}
@@ -262,7 +334,7 @@ OPTIONS /error
 h5. 响应
 
 ||HTTP代码||说明||类型||
-|*200*||OK||< string, object > map|
+|*200*||OK||[ModelAndView|#modelandview]|
 |*204*||No Content||无内容|
 |*401*||Unauthorized||无内容|
 |*403*||Forbidden||无内容|
@@ -275,7 +347,7 @@ h5. 消耗
 
 h5. 生成
 
-* {noformat}*/*{noformat}
+* {noformat}text/html{noformat}
 
 
 h5. HTTP请求示例
@@ -290,7 +362,19 @@ h5. HTTP响应示例
 
 h6. 响应 200
 {code:language=json}
-"object"
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
 {code}
 
 

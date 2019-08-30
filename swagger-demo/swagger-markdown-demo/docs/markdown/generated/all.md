@@ -37,8 +37,8 @@ Api Documentation
 Basic Error Controller
 
 
-<a name="errorusingpost"></a>
-#### error
+<a name="errorhtmlusingpost"></a>
+#### errorHtml
 ```
 POST /error
 ```
@@ -48,7 +48,7 @@ POST /error
 
 |HTTP代码|说明|类型|
 |---|---|---|
-|**200**|OK|< string, object > map|
+|**200**|OK|[ModelAndView](#modelandview)|
 |**201**|Created|无内容|
 |**401**|Unauthorized|无内容|
 |**403**|Forbidden|无内容|
@@ -62,7 +62,7 @@ POST /error
 
 ##### 生成
 
-* `*/*`
+* `text/html`
 
 
 ##### HTTP请求示例
@@ -78,12 +78,24 @@ POST /error
 ###### 响应 200
 ```
 json :
-"object"
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
 ```
 
 
-<a name="errorusingget"></a>
-#### error
+<a name="errorhtmlusingget"></a>
+#### errorHtml
 ```
 GET /error
 ```
@@ -93,7 +105,7 @@ GET /error
 
 |HTTP代码|说明|类型|
 |---|---|---|
-|**200**|OK|< string, object > map|
+|**200**|OK|[ModelAndView](#modelandview)|
 |**401**|Unauthorized|无内容|
 |**403**|Forbidden|无内容|
 |**404**|Not Found|无内容|
@@ -106,7 +118,7 @@ GET /error
 
 ##### 生成
 
-* `*/*`
+* `text/html`
 
 
 ##### HTTP请求示例
@@ -122,12 +134,24 @@ GET /error
 ###### 响应 200
 ```
 json :
-"object"
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
 ```
 
 
-<a name="errorusingput"></a>
-#### error
+<a name="errorhtmlusingput"></a>
+#### errorHtml
 ```
 PUT /error
 ```
@@ -137,7 +161,7 @@ PUT /error
 
 |HTTP代码|说明|类型|
 |---|---|---|
-|**200**|OK|< string, object > map|
+|**200**|OK|[ModelAndView](#modelandview)|
 |**201**|Created|无内容|
 |**401**|Unauthorized|无内容|
 |**403**|Forbidden|无内容|
@@ -151,7 +175,7 @@ PUT /error
 
 ##### 生成
 
-* `*/*`
+* `text/html`
 
 
 ##### HTTP请求示例
@@ -167,12 +191,24 @@ PUT /error
 ###### 响应 200
 ```
 json :
-"object"
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
 ```
 
 
-<a name="errorusingdelete"></a>
-#### error
+<a name="errorhtmlusingdelete"></a>
+#### errorHtml
 ```
 DELETE /error
 ```
@@ -182,7 +218,7 @@ DELETE /error
 
 |HTTP代码|说明|类型|
 |---|---|---|
-|**200**|OK|< string, object > map|
+|**200**|OK|[ModelAndView](#modelandview)|
 |**204**|No Content|无内容|
 |**401**|Unauthorized|无内容|
 |**403**|Forbidden|无内容|
@@ -195,7 +231,7 @@ DELETE /error
 
 ##### 生成
 
-* `*/*`
+* `text/html`
 
 
 ##### HTTP请求示例
@@ -211,12 +247,24 @@ DELETE /error
 ###### 响应 200
 ```
 json :
-"object"
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
 ```
 
 
-<a name="errorusingpatch"></a>
-#### error
+<a name="errorhtmlusingpatch"></a>
+#### errorHtml
 ```
 PATCH /error
 ```
@@ -226,7 +274,7 @@ PATCH /error
 
 |HTTP代码|说明|类型|
 |---|---|---|
-|**200**|OK|< string, object > map|
+|**200**|OK|[ModelAndView](#modelandview)|
 |**204**|No Content|无内容|
 |**401**|Unauthorized|无内容|
 |**403**|Forbidden|无内容|
@@ -239,7 +287,7 @@ PATCH /error
 
 ##### 生成
 
-* `*/*`
+* `text/html`
 
 
 ##### HTTP请求示例
@@ -255,12 +303,24 @@ PATCH /error
 ###### 响应 200
 ```
 json :
-"object"
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
 ```
 
 
-<a name="errorusinghead"></a>
-#### error
+<a name="errorhtmlusinghead"></a>
+#### errorHtml
 ```
 HEAD /error
 ```
@@ -270,7 +330,7 @@ HEAD /error
 
 |HTTP代码|说明|类型|
 |---|---|---|
-|**200**|OK|< string, object > map|
+|**200**|OK|[ModelAndView](#modelandview)|
 |**204**|No Content|无内容|
 |**401**|Unauthorized|无内容|
 |**403**|Forbidden|无内容|
@@ -283,7 +343,7 @@ HEAD /error
 
 ##### 生成
 
-* `*/*`
+* `text/html`
 
 
 ##### HTTP请求示例
@@ -299,12 +359,24 @@ HEAD /error
 ###### 响应 200
 ```
 json :
-"object"
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
 ```
 
 
-<a name="errorusingoptions"></a>
-#### error
+<a name="errorhtmlusingoptions"></a>
+#### errorHtml
 ```
 OPTIONS /error
 ```
@@ -314,7 +386,7 @@ OPTIONS /error
 
 |HTTP代码|说明|类型|
 |---|---|---|
-|**200**|OK|< string, object > map|
+|**200**|OK|[ModelAndView](#modelandview)|
 |**204**|No Content|无内容|
 |**401**|Unauthorized|无内容|
 |**403**|Forbidden|无内容|
@@ -327,7 +399,7 @@ OPTIONS /error
 
 ##### 生成
 
-* `*/*`
+* `text/html`
 
 
 ##### HTTP请求示例
@@ -343,7 +415,19 @@ OPTIONS /error
 ###### 响应 200
 ```
 json :
-"object"
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
 ```
 
 

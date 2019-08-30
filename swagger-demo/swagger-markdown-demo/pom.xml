@@ -42,4 +42,39 @@
         </dependency>
 
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.asciidoctor</groupId>
+                <artifactId>asciidoctor-maven-plugin</artifactId>
+                <version>1.5.6</version>
+                <configuration>
+                    <sourceDirectory>./docs/asciidoc/generated</sourceDirectory>
+                    <outputDirectory>./docs/asciidoc/html</outputDirectory>
+                    <headerFooter>true</headerFooter>
+                    <doctype>book</doctype>
+                    <backend>html</backend>
+                    <sourceHighlighter>coderay</sourceHighlighter>
+                    <attributes>
+                        <!--html左边的table of contents-->
+                        <toc>left</toc>
+                        <!--3 表示 嵌套-->
+                        <toclevels>3</toclevels>
+                        <!--自动打上数字标签-->
+                        <sectnums>true</sectnums>
+                    </attributes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>output-html</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>process-asciidoc</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
