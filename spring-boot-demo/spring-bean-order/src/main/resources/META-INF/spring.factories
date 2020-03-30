@@ -1,0 +1,4 @@
+# Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.yaojinwei.demo.spring.bean.order.configuration.FirstConfiguration,\
+  com.yaojinwei.demo.spring.bean.order.configuration.SecondConfiguration

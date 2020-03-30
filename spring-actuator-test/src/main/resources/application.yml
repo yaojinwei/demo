@@ -1,9 +1,43 @@
-spring.boot.admin.url: http://localhost:8080/admin
-spring.boot.admin.context-path: /admin
-management.security.enabled: false
-management.context-path: /actuator
+#spring.boot.admin.url: http://localhost:8080/admin
+#spring.boot.admin.context-path: /admin
+#management.security.enabled: false
+#management.context-path: /actuator
+#spring:
+#  boot:
+#    admin:
+#      client:
+#        management-url: http://localhost:8080/actuator
+#
+#
+server:
+  port: 8805
+
 spring:
-  boot:
-    admin:
-      client:
-        management-url: http://localhost:8080/actuator
+  application:
+    name: spring-actuator-test
+  profiles:
+    active: dev
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  #        include: 'prometheus,health,metrics,httptrace,liquibase,flyway,env,loggers,mappings,autoconfig,beans,configprops,dump,info,httptrace,sentinel'
+  metrics:
+#    tags:
+#      application: ${spring.application.name}
+    web:
+      server:
+        request:
+          autotime:
+            enabled: true
+  info:
+    defaults:
+      enabled: true
+
+  endpoint:
+    health:
+      show-details: always
+  server:
+    port: 8806
