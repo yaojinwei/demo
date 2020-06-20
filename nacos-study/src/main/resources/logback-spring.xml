@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- https://github.com/spring-projects/spring-boot/blob/v1.5.13.RELEASE/spring-boot/src/main/resources/org/springframework/boot/logging/logback/defaults.xml -->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <!-- 应用名-->
+    <property name="APP_NAME" value="alihealth-wise-framework"/>
+
+    <!-- 日志路径，区分开发环境-->
+    <property name="logback.dir" value="/${user.home}/logs/${APP_NAME}/logs"/>
+    <springProfile name="prod,test">
+        <property name="logback.dir" value="/home/admin/${APP_NAME}"></property>
+    </springProfile>
+
+    <property name="logback.rolling.filename" value="${logback.dir}/application.log"/>
+    <property name="logback.error.filename" value="${logback.dir}/error.log"/>
+    <property name="logback.charset" value="UTF-8"/>
+
+    <!-- Console 输出格式 -->
+    <property name="CONSOLE_LOG_PATTERN"
+              value="%date{yyyy-MM-dd HH:mm:ss} | %highlight(%-5level) | %boldYellow(%thread) | %boldGreen(%-40.40logger{39}) | %msg%n"/>
+
+    <!-- 文件输出格式 -->
+    <property name="FILE_LOG_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger Line:%-3L - %msg%n"/>
+
+    <!-- 全量日志-->
+    <appender name="FILE_ALL"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logback.rolling.filename}</file>
+        <encoder>
+            <pattern>${FILE_LOG_PATTERN}</pattern>
+            <charset>${logback.charset}</charset>
+        </encoder>
+        <rollingPolicy
+                class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${logback.rolling.filename}.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <maxFileSize>50MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <!-- ERROR -->
+    <appender name="FILE_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logback.error.filename}</file>
+        <append>true</append>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${FILE_LOG_PATTERN}</pattern>
+            <charset>${logback.charset}</charset>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${logback.error.filename}.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <maxFileSize>50MB</maxFileSize>
+            <totalSizeCap>5GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+    
+    <appender name="CONSOLE"
+              class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+            <charset>${logback.charset}</charset>
+        </encoder>
+    </appender>
+
+    <!-- 默认-->
+    <root level="DEBUG">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+    <!-- 测试环境. 多个使用逗号隔开. -->
+    <springProfile name="test">
+        <root level="DEBUG">
+            <appender-ref ref="FILE_ALL"/>
+            <appender-ref ref="FILE_ERROR"/>
+        </root>
+    </springProfile>
+
+    <!-- 生产环境. -->
+    <springProfile name="prod">
+        <root level="INFO">
+            <appender-ref ref="FILE_ALL"/>
+            <appender-ref ref="FILE_ERROR"/>
+        </root>
+    </springProfile>
+
+</configuration>

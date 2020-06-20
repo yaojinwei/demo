@@ -32,7 +32,6 @@ public class SpeakInterfaceImpl implements SpeakInterface {
         return speakerDTO;
     }
 
-    @Override
     public Message speak(SpeakerDTO speakerDTO) {
         logger.info("The speaker is:(1.1)" + speakerDTO);
         ListenerDTO listenerDTO = createListenerDTO();

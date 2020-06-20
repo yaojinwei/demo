@@ -14,6 +14,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import javax.annotation.Resource;
 
 /**
+ * Dubbo的广播模式下Can't assign requested address问题解决
+ * https://blog.csdn.net/garylongqq/article/details/52014617
+ *
  * @author yaojinwei<yjw0909@gmail.com>
  * @since 2016/8/21
  */

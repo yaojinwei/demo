@@ -32,6 +32,12 @@ management:
         request:
           autotime:
             enabled: true
+    export:
+      prometheus:
+        pushgateway:
+          enabled: true
+          base-url: http://11.164.62.162:9091 #部署地址
+          push-rate: 10s  #推送频率
   info:
     defaults:
       enabled: true

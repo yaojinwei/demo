@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>zipkin-study</artifactId>
+        <groupId>com.yaojinwei.demo</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>client</artifactId>
+
+    <modules>
+        <module>server1</module>
+        <module>server2</module>
+        <module>server3</module>
+    </modules>
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.build.jdk>${java.version}</project.build.jdk>
+        <wise.framework.version>2.0.5-SNAPSHOT</wise.framework.version>
+        <spring-boot.version>2.2.5.RELEASE</spring-boot.version>
+        <spring-cloud.version>2.2.2.RELEASE</spring-cloud.version>
+        <nacos-client.version>1.1.4</nacos-client.version>
+
+        <dockerfile.maven.version>1.4.13</dockerfile.maven.version>
+        <docker.registry.name.prefix>registry.cn-zhangjiakou.aliyuncs.com/alijk</docker.registry.name.prefix>
+        <okhttp.version>4.3.0</okhttp.version>
+        <commons-text.version>1.8</commons-text.version>
+    </properties>
+
+
+    <dependencies>
+        <!--        <dependency>-->
+        <!--            <groupId>io.zipkin.brave</groupId>-->
+        <!--            <artifactId>brave-core</artifactId>-->
+        <!--            <version>4.0.6</version>-->
+        <!--        </dependency>-->
+
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.zipkin.brave/brave-http &ndash;&gt;-->
+
+        <!--        <dependency>-->
+        <!--            <groupId>io.zipkin.brave</groupId>-->
+        <!--            <artifactId>brave-http</artifactId>-->
+        <!--            <version>4.0.6</version>-->
+        <!--        </dependency>-->
+
+        <!--        <dependency>-->
+        <!--            <groupId>io.zipkin.brave</groupId>-->
+        <!--            <artifactId>brave-spancollector-http</artifactId>-->
+        <!--            <version>4.0.6</version>-->
+        <!--        </dependency>-->
+
+        <!--        <dependency>-->
+        <!--            <groupId>io.zipkin.brave</groupId>-->
+        <!--            <artifactId>brave-web-servlet-filter</artifactId>-->
+        <!--            <version>4.0.6</version>-->
+        <!--        </dependency>-->
+
+        <!--        <dependency>-->
+        <!--            <groupId>io.zipkin.brave</groupId>-->
+        <!--            <artifactId>brave-okhttp</artifactId>-->
+        <!--            <version>4.0.6</version>-->
+        <!--        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.13</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.1</version>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>io.zipkin.brave</groupId>-->
+        <!--            <artifactId>brave</artifactId>-->
+        <!--            <version>5.4.2</version>-->
+        <!--        </dependency>-->
+        <dependency>
+            <groupId>io.zipkin.reporter2</groupId>
+            <artifactId>zipkin-sender-okhttp3</artifactId>
+            <version>2.13.1</version>
+        </dependency>
+
+        <!--        <dependency>-->
+        <!--            <groupId>io.zipkin.brave</groupId>-->
+        <!--            <artifactId>brave-spring-beans</artifactId>-->
+        <!--            <version>5.11.2</version>-->
+        <!--        </dependency>-->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.2.5.RELEASE</version>
+        </dependency>
+
+        <!-- Sleuth automatically adds trace interceptors when in the classpath -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
+            <version>${spring-cloud.version}</version>
+        </dependency>
+        <!-- Sends trace data to zipkin over http (defaults to http://localhost:9411/api/v2/spans) -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+            <version>${spring-cloud.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.zipkin.brave</groupId>
+            <artifactId>brave-instrumentation-okhttp3</artifactId>
+            <version>5.10.1</version>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>io.zipkin.brave</groupId>-->
+        <!--            <artifactId>brave-instrumentation-spring-webmvc</artifactId>-->
+        <!--            <version>5.11.2</version>-->
+        <!--        </dependency>-->
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/io.zipkin.reporter2/zipkin-reporter -->
+<!--            <dependency>-->
+<!--                <groupId>io.zipkin.reporter2</groupId>-->
+<!--                <artifactId>zipkin-reporter</artifactId>-->
+<!--                <version>2.13.1</version>-->
+<!--            </dependency>-->
+
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>

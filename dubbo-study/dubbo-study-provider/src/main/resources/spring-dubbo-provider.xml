@@ -12,7 +12,7 @@
     <dubbo:application name="dubbo-study-provider" owner="yaojinwei" logger="slf4j"/>
 
     <!-- zk注册中心配置 -->
-    <dubbo:registry id="zk1" address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:registry id="zk1" address="multicast://224.5.6.7:1234"/>
 
     <!-- 用dubbo端口自动分配 -->
     <dubbo:protocol id="mydubbo" name="dubbo" port="20887" threads="500" serialization="" host="127.0.0.1"/>

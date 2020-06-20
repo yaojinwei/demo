@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-@Component
+//@Component
 public class PushGatewayConfig {
 
     @Autowired

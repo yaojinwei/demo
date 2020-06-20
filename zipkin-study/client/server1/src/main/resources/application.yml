@@ -1,0 +1,14 @@
+server:
+  port: 8084
+
+
+spring:
+  zipkin:
+    base-url: http://11.164.62.162:9411
+    service:
+      name: service1
+    enabled: true
+    sender:
+      type: web
+  application:
+    name: service1

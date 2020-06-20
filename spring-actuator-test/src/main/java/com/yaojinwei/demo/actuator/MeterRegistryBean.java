@@ -4,9 +4,11 @@ import io.micrometer.core.instrument.Gauge;
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Timer;
 import io.micrometer.core.instrument.binder.BaseUnits;
+import org.springframework.util.StringUtils;
 
 import java.lang.management.MemoryUsage;
 import java.util.concurrent.TimeUnit;
+import java.util.function.ToDoubleFunction;
 
 /**
  * @author Yao Jinwei (yjw0909 AT gmail DOT com)
@@ -38,6 +40,8 @@ public class MeterRegistryBean {
                     .baseUnit(BaseUnits.BYTES)
                     .register(meterRegistry);
         }
+
+        meterRegistry.gauge("", "123", value -> Double.parseDouble(value));
 
         Timer timer = Timer
                 .builder("my.timer")
