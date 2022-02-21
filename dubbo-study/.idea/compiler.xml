@@ -6,13 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dubbo-study-interface" />
-        <module name="dubbo-study-consumer" />
         <module name="dubbo-study-provider" />
+        <module name="dubbo-springboot-consumer" />
+        <module name="dubbo-springboot-provider" />
+        <module name="dubbo-study-consumer" />
+        <module name="dubbo-springboot-interface" />
+        <module name="dubbo-study-interface" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="dubbo-study" target="1.5" />
+      <module name="dubbo-springboot-consumer" target="1.8" />
+      <module name="dubbo-springboot-interface" target="1.8" />
+      <module name="dubbo-springboot-provider" target="1.8" />
+      <module name="dubbo-study" target="1.8" />
       <module name="dubbo-study-consumer" target="1.7" />
       <module name="dubbo-study-interface" target="1.5" />
       <module name="dubbo-study-provider" target="1.5" />
@@ -20,6 +26,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dubbo-springboot-consumer" options="-Xlint:all" />
+      <module name="dubbo-springboot-interface" options="-Xlint:all" />
+      <module name="dubbo-springboot-provider" options="-Xlint:all" />
       <module name="dubbo-study-consumer" options="-Xlint:all" />
     </option>
   </component>

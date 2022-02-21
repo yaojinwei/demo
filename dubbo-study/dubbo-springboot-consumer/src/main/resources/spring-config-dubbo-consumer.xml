@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans         
+						http://www.springframework.org/schema/beans/spring-beans.xsd         
+						http://code.alibabatech.com/schema/dubbo         
+						http://code.alibabatech.com/schema/dubbo/dubbo.xsd">       
+						
+	<!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
+	<!-- <dubbo:application name="trade-ordercenter-consumer" owner="yanhuajian"/> -->
+	<!-- 使用multicast广播注册中心暴露发现服务地址 -->
+	<!-- <dubbo:registry address="multicast://224.5.6.7:1234" /> -->
+	
+	<!-- zk注册中心配置 -->
+    <dubbo:registry address="${dubbo.registry.address}" group="${dubbo.registry.group}" />
+    
+    <dubbo:consumer version="${dubbo.protocol.version}" /> 
+	
+	<!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
+	
+	<!-- 用户 -->
+	<dubbo:reference id="userInterfaces" interface="com.le.jr.trade.usercenter.interfaces.UserInterfaces" check="false" group="${user_group}" />
+
+	<!-- 库存 -->
+	<dubbo:reference id="stockInterface" interface="com.le.jr.trade.stockcenter.interfaces.StockInterface" check="false" group="${stock_group}" />
+	
+	<!-- 用户持有订单 -->
+	<dubbo:reference id="buyerOrderHoldTotalInterface" interface="com.le.jr.trade.buyertrade.interfaces.BuyerOrderHoldTotalInterface" check="false" group="${order_group}" />
+	
+	<!-- 投资 -->
+	<dubbo:reference id="investmentOrderTaskInterfaces" interface="com.le.jr.trade.investment.interfaces.InvestmentOrderTaskInterfaces" check="false" group="${order_group}" />
+	
+</beans>

@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    dynamic:
+      datasource:
+        elasticsearch:
+          url: jdbc:elasticsearch://39.98.209.81:9300/
+          connectionProperties: client.transport.ignore_cluster_name=true;cluster.name=cardicare;client.transport.ignore_cluster_name=true;xpack.security.enabled=true;xpack.security.transport.ssl.enabled=true;xpack.security.transport.ssl.verification_mode=certificate;xpack.security.user=elastic:AliHealth@$#@!160533ops;xpack.security.transport.ssl.keystore.path=/Users/yaojinwei/Temp/elastic-certificates.p12;xpack.security.transport.ssl.truststore.path=/Users/yaojinwei/Temp/elastic-certificates.p12;xpack.ssl.certificate_authorities=/Users/yaojinwei/Temp/ca.crt
+          seata: false
+#      enable: false
+#      properties:
+

@@ -6,22 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="proxt-cglib" />
-        <module name="proxt-dynamic" />
         <module name="proxy-advanced" />
         <module name="proxy-agent" />
-        <module name="proxy-begin" />
+        <module name="proxt-cglib" />
+        <module name="proxt-dynamic" />
         <module name="proxy-common" />
+        <module name="proxy-begin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="proxt-cglib" target="1.5" />
-      <module name="proxt-dynamic" target="1.5" />
       <module name="proxy-advanced" target="1.7" />
       <module name="proxy-agent" target="1.5" />
       <module name="proxy-begin" target="1.5" />
       <module name="proxy-common" target="1.5" />
       <module name="proxy-study" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="proxy-advanced" options="-Xlint:all" />
+    </option>
   </component>
 </project>

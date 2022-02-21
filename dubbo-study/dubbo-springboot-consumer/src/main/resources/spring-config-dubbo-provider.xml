@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.1.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
+    <dubbo:application name="${dubbo.application.name}" owner="${dubbo.application.owner}" />
+    
+    <!-- 服务分组 -->
+    <dubbo:provider group="${order_group}" retries="0" version="${dubbo.protocol.version}" />
+    
+    <!-- 监控 -->
+    <!-- <dubbo:monitor protocol="registry"/> -->
+    
+    <!-- zk注册中心配置 -->
+    <!-- <dubbo:registry address="zookeeper://10.11.145.91:2181?backup=10.11.145.100:2181,10.11.145.103:2181" /> -->
+    <!-- 用dubbo协议在20880端口暴露服务 -->
+	<dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" serialization="${dubbo.protocol.serialization}" threads="${dubbo.protocol.threads}" />   
+  
+    <!-- 声明需要暴露的服务接口 -->
+    <!-- 订单 -->
+	<dubbo:service interface="com.le.jr.trade.ordercenter.interfaces.OrderCommonServiceInterface" ref="orderCommonServiceInterface" timeout="${dubbo.protocol.timeout}" />
+	<dubbo:service interface="com.le.jr.trade.ordercenter.interfaces.OrderUserServiceInterface" ref="orderUserServiceInterface" timeout="${dubbo.protocol.timeout}" />
+	<dubbo:service interface="com.le.jr.trade.ordercenter.interfaces.OrderSystemInterface" ref="orderSystemInterface" timeout="${dubbo.protocol.timeout}" />
+	<dubbo:service interface="com.le.jr.trade.ordercenter.interfaces.OrderProductionInterface" ref="orderProductionInterface" timeout="${dubbo.protocol.timeout}" />
+	
+	<dubbo:service interface="com.le.jr.trade.ordercenter.interfaces.OrderVenderSyncInterface" ref="orderVenderSyncInterface" timeout="${dubbo.protocol.timeout}" />
+	<dubbo:service interface="com.le.jr.trade.ordercenter.interfaces.OrderSolrSyncInterface" ref="orderSolrSyncInterface" timeout="${dubbo.protocol.timeout}" />
+	<dubbo:service interface="com.le.jr.trade.ordercenter.interfaces.OrderSyscLogInterface" ref="orderSyscLogInterface" timeout="${dubbo.protocol.timeout}" />
+	
+	<dubbo:service interface="com.le.jr.trade.ordercenter.interfaces.OrderUserFullInterface" ref="orderUserFullInterface" timeout="${dubbo.protocol.timeout}" />
+	
+	
+</beans>

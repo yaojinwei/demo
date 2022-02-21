@@ -1,0 +1,18 @@
+<conversion>
+  <applied-converters>
+    <converter id="kotlin-non-jvm-source-roots" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="android-sdk-library" />
+    <converter id="android-module-to-java-module" />
+    <converter id="android-proguard-options" />
+  </applied-converters>
+  <project-files>
+    <file path="/Users/yaojinwei/Mygit/demo/swagger-demo/.idea/swagger-demo.iml" timestamp="1599620429531" />
+    <file path="/Users/yaojinwei/Mygit/demo/swagger-demo/.idea/modules.xml" timestamp="1599620429576" />
+    <file path="/Users/yaojinwei/Mygit/demo/swagger-demo/.idea/vcs.xml" timestamp="1564369645935" />
+    <file path="/Users/yaojinwei/Mygit/demo/swagger-demo/.idea/misc.xml" timestamp="1564369325995" />
+    <file path="/Users/yaojinwei/Mygit/demo/swagger-demo/.idea/compiler.xml" timestamp="1599619145743" />
+    <file path="/Users/yaojinwei/Mygit/demo/swagger-demo/.idea/workspace.xml" timestamp="1599619512832" />
+    <file path="/Users/yaojinwei/Mygit/demo/swagger-demo/.idea/jarRepositories.xml" timestamp="1599102924125" />
+  </project-files>
+</conversion>

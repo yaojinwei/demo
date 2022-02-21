@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/dubbo-study-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-study-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-study-consumer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-study-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-study-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-study-interface/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-study-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-study-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-study-provider/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

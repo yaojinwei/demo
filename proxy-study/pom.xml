@@ -14,7 +14,7 @@
         <module>proxy-advanced</module>
         <module>proxy-common</module>
         <module>proxy-agent</module>
-        <module>proxt-cglib</module>
+        <module>proxy-cglib</module>
     </modules>
 
 </project>

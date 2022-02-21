@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/dubbo-springboot-consumer/dubbo-springboot-consumer.iml" filepath="$PROJECT_DIR$/dubbo-springboot-consumer/dubbo-springboot-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-springboot-interface/dubbo-springboot-interface.iml" filepath="$PROJECT_DIR$/dubbo-springboot-interface/dubbo-springboot-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-springboot-provider/dubbo-springboot-provider.iml" filepath="$PROJECT_DIR$/dubbo-springboot-provider/dubbo-springboot-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-study.iml" filepath="$PROJECT_DIR$/dubbo-study.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-study-consumer/dubbo-study-consumer.iml" filepath="$PROJECT_DIR$/dubbo-study-consumer/dubbo-study-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-study-interface/dubbo-study-interface.iml" filepath="$PROJECT_DIR$/dubbo-study-interface/dubbo-study-interface.iml" />

@@ -1,0 +1,63 @@
+#spring.cloud.stream.rocketmq.bindings.output.producer.group=tx-demo-group
+#spring.cloud.stream.rocketmq.bindings.output.producer.transactional=true
+
+
+spring:
+  application:
+    name: spring-cloud-study-stream-a
+  cloud:
+    stream:
+      rocketmq:
+
+        bindings:
+          output1:
+            producer:
+              sync: true
+#              transactional: true
+#              group: callback-message-group
+        binder:
+          # RocketMQ 服务器地址
+          name-server: 127.0.0.1:9876
+#            - 11.164.62.162:9876
+#            - 11.164.62.159:9877
+      bindings:
+        output1: {destination: test-34566, content-type: application/json}
+#        output2: {destination: test-topic2, content-type: application/json}
+        input1: {destination: test-34566, group: test-group1, content-type: application/json}
+#      default-binder: rocketmq
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+server:
+  port: 8085
+
+debug: true
+
+#参考https://blog.51cto.com/zero01/2428639
+#spring:
+#  cloud:
+#    stream:
+#      bindings:
+#        <input channel名称>:
+#          consumer:
+#            # 最多尝试处理几次，默认3
+#            maxAttempts: 3
+#            # 重试时初始避退间隔，单位毫秒，默认1000
+#            backOffInitialInterval: 1000
+#            # 重试时最大避退间隔，单位毫秒，默认10000
+#            backOffMaxInterval: 10000
+#            # 避退乘数，默认2.0
+#            backOffMultiplier: 2.0
+#            # 当listen抛出retryableExceptions未列出的异常时，是否要重试
+#            defaultRetryable: true
+#            # 异常是否允许重试的map映射
+#            retryableExceptions:
+#              java.lang.RuntimeException: true
+#              java.lang.IllegalStateException: false

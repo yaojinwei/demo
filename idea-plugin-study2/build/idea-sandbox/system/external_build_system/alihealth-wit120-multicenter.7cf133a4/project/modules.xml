@@ -1,0 +1,28 @@
+<project>
+  <component name="ExternalProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/alihealth-wit120-multicenter.iml" filepath="$PROJECT_DIR$/.idea/alihealth-wit120-multicenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alihealth-wit120-multicenter-dal/alihealth-wit120-multicenter-dal.iml" filepath="$PROJECT_DIR$/alihealth-wit120-multicenter-dal/alihealth-wit120-multicenter-dal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alihealth-wit120-multicenter-export/alihealth-wit120-multicenter-export.iml" filepath="$PROJECT_DIR$/alihealth-wit120-multicenter-export/alihealth-wit120-multicenter-export.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alihealth-wit120-multicenter-service/alihealth-wit120-multicenter-service.iml" filepath="$PROJECT_DIR$/alihealth-wit120-multicenter-service/alihealth-wit120-multicenter-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alihealth-wit120-multicenter-start/alihealth-wit120-multicenter-start.iml" filepath="$PROJECT_DIR$/alihealth-wit120-multicenter-start/alihealth-wit120-multicenter-start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alihealth-wit120-multicenter-web/alihealth-wit120-multicenter-web.iml" filepath="$PROJECT_DIR$/alihealth-wit120-multicenter-web/alihealth-wit120-multicenter-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-demo/multicenter-demo.iml" filepath="$PROJECT_DIR$/multicenter-demo/multicenter-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-ingroup/multicenter-ingroup.iml" filepath="$PROJECT_DIR$/multicenter-ingroup/multicenter-ingroup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-project/multicenter-project.iml" filepath="$PROJECT_DIR$/multicenter-project/multicenter-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-search/multicenter-search.iml" filepath="$PROJECT_DIR$/multicenter-search/multicenter-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-search/multicenter-search-client/multicenter-search-client.iml" filepath="$PROJECT_DIR$/multicenter-search/multicenter-search-client/multicenter-search-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-search/multicenter-search-entity/multicenter-search-entity.iml" filepath="$PROJECT_DIR$/multicenter-search/multicenter-search-entity/multicenter-search-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-search/multicenter-search-service/multicenter-search-service.iml" filepath="$PROJECT_DIR$/multicenter-search/multicenter-search-service/multicenter-search-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-search/multicenter-search-web/multicenter-search-web.iml" filepath="$PROJECT_DIR$/multicenter-search/multicenter-search-web/multicenter-search-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-tableone/multicenter-tableone.iml" filepath="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-api/multicenter-tableone-api.iml" filepath="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-api/multicenter-tableone-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-client/multicenter-tableone-client.iml" filepath="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-client/multicenter-tableone-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-client/multicenter-tableone-client-dubbo/multicenter-tableone-client-dubbo.iml" filepath="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-client/multicenter-tableone-client-dubbo/multicenter-tableone-client-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-server/multicenter-tableone-server.iml" filepath="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-server/multicenter-tableone-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-server/multicenter-tableone-server-dubbo/multicenter-tableone-server-dubbo.iml" filepath="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-server/multicenter-tableone-server-dubbo/multicenter-tableone-server-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-service/multicenter-tableone-service.iml" filepath="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-service/multicenter-tableone-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-web/multicenter-tableone-web.iml" filepath="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-web/multicenter-tableone-web.iml" />
+    </modules>
+  </component>
+</project>

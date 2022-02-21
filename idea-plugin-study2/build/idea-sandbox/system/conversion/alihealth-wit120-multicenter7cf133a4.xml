@@ -1,0 +1,17 @@
+<conversion>
+  <applied-converters>
+    <converter id="kotlin-non-jvm-source-roots" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="android-sdk-library" />
+    <converter id="android-module-to-java-module" />
+    <converter id="android-proguard-options" />
+  </applied-converters>
+  <project-files>
+    <file path="/Users/yaojinwei/Projects/alihealth-wit120-multicenter/.idea/workspace.xml" timestamp="1601294184083" />
+    <file path="/Users/yaojinwei/Projects/alihealth-wit120-multicenter/.idea/encodings.xml" timestamp="1601282663155" />
+    <file path="/Users/yaojinwei/Projects/alihealth-wit120-multicenter/.idea/vcs.xml" timestamp="1562760477245" />
+    <file path="/Users/yaojinwei/Projects/alihealth-wit120-multicenter/.idea/jarRepositories.xml" timestamp="1598412863504" />
+    <file path="/Users/yaojinwei/Projects/alihealth-wit120-multicenter/.idea/compiler.xml" timestamp="1601287805993" />
+    <file path="/Users/yaojinwei/Projects/alihealth-wit120-multicenter/.idea/misc.xml" timestamp="1601285803946" />
+  </project-files>
+</conversion>

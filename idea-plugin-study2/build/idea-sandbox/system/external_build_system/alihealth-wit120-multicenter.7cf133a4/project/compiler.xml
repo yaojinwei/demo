@@ -1,0 +1,28 @@
+<project>
+  <component name="ExternalCompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="alihealth-wit120-multicenter" target="1.8" />
+      <module name="alihealth-wit120-multicenter-dal" target="1.8" />
+      <module name="alihealth-wit120-multicenter-export" target="1.8" />
+      <module name="alihealth-wit120-multicenter-service" target="1.8" />
+      <module name="alihealth-wit120-multicenter-start" target="1.8" />
+      <module name="alihealth-wit120-multicenter-web" target="1.8" />
+      <module name="multicenter-demo" target="1.8" />
+      <module name="multicenter-ingroup" target="1.8" />
+      <module name="multicenter-project" target="1.8" />
+      <module name="multicenter-search" target="1.8" />
+      <module name="multicenter-search-client" target="1.8" />
+      <module name="multicenter-search-entity" target="1.8" />
+      <module name="multicenter-search-service" target="1.8" />
+      <module name="multicenter-search-web" target="1.8" />
+      <module name="multicenter-tableone" target="1.8" />
+      <module name="multicenter-tableone-api" target="1.8" />
+      <module name="multicenter-tableone-client" target="1.8" />
+      <module name="multicenter-tableone-client-dubbo" target="1.8" />
+      <module name="multicenter-tableone-server" target="1.8" />
+      <module name="multicenter-tableone-server-dubbo" target="1.8" />
+      <module name="multicenter-tableone-service" target="1.8" />
+      <module name="multicenter-tableone-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,47 @@
+{
+  "appInfo" : {
+    "build" : "202.6397.94",
+    "buildDate" : "Mon, 27 Jul 2020 18:39:47 +0800",
+    "productCode" : "IC",
+    "generated" : "Thu, 17 Sep 2020 16:56:11 +0800",
+    "os" : "macOS 10.15.4",
+    "runtime" : "JetBrains s.r.o. 11.0.7 11.0.7+10-b944.20"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 536870912,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "alihealth-wit120-multicenter",
+    "numberOfFileProviders" : 1,
+    "totalNumberOfFiles" : 7,
+    "times" : {
+      "indexingTime" : "7 s 430 ms",
+      "scanFilesTime" : "7 s 257 ms",
+      "pushPropertiesTime" : "115 ms",
+      "indexExtensionsTime" : "< 1 ms",
+      "pushPropertiesStart" : "Thu, 17 Sep 2020 16:56:04 +0800",
+      "pushPropertiesEnd" : "Thu, 17 Sep 2020 16:56:04 +0800",
+      "scanFilesStart" : "Thu, 17 Sep 2020 16:56:04 +0800",
+      "scanFilesEnd" : "Thu, 17 Sep 2020 16:56:11 +0800",
+      "indexExtensionsStart" : "Thu, 17 Sep 2020 16:56:04 +0800",
+      "indexExtensionsEnd" : "Thu, 17 Sep 2020 16:56:04 +0800",
+      "indexingStart" : "Thu, 17 Sep 2020 16:56:04 +0800",
+      "indexingEnd" : "Thu, 17 Sep 2020 16:56:11 +0800"
+    },
+    "numberOfIndexingThreads" : 4,
+    "totalStatsPerFileType" : [ ],
+    "totalStatsPerIndexer" : [ ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Library 'Maven: org.liquibase:liquibase-core:3.8.8'",
+      "totalNumberOfFiles" : 7,
+      "totalIndexingTime" : "4 ms",
+      "statsPerFileType" : [ ],
+      "statsPerIndexer" : [ ],
+      "fastIndexers" : [ ]
+    } ]
+  }
+}

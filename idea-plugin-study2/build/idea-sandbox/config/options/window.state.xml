@@ -1,0 +1,22 @@
+<application>
+  <component name="WindowManager">
+    <frame x="0" y="0" width="1920" height="1080" fullScreen="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+    </layout>
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="960" y="445" key="WELCOME_SCREEN" timestamp="1600929585883">
+      <screen x="0" y="23" width="1920" height="1003" />
+    </state>
+    <state x="720" y="388" key="WELCOME_SCREEN/0.23.1440.833" timestamp="1599029578193" />
+    <state x="960" y="444" key="WELCOME_SCREEN/0.23.1920.1001" timestamp="1599019259032" />
+    <state x="960" y="445" key="WELCOME_SCREEN/0.23.1920.1003" timestamp="1600929585883" />
+    <state x="960" y="443" key="WELCOME_SCREEN/0.23.1920.997" timestamp="1599019469869" />
+  </component>
+</application>

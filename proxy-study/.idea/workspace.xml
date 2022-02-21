@@ -1,137 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="05aa21ab-a00d-47f8-b0c2-8572f913ce22" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proxt-dynamic/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proxt-dynamic/src/main/java/com/yaojinwei/study/proxy/CountService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proxt-dynamic/src/main/java/com/yaojinwei/study/proxy/CountServiceImpl.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proxy-advanced/target/classes/com/yaojinwei/study/proxy/advanced/DynamicProxyPerformance$ByteArrayClassLoader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proxy-advanced/target/classes/com/yaojinwei/study/proxy/advanced/DynamicProxyPerformance$CglibInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proxy-advanced/target/classes/com/yaojinwei/study/proxy/advanced/DynamicProxyPerformance$JavaAssitInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proxy-advanced/target/classes/com/yaojinwei/study/proxy/advanced/DynamicProxyPerformance$JdkHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proxy-advanced/target/classes/com/yaojinwei/study/proxy/advanced/DynamicProxyPerformance.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proxy-common/target/classes/com/yaojinwei/study/proxy/common/utils/ProxyUtils.class" afterPath="$PROJECT_DIR$/proxy-common/target/classes/com/yaojinwei/study/proxy/common/utils/ProxyUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proxy-advanced/proxy-advanced.iml" afterPath="$PROJECT_DIR$/proxy-advanced/proxy-advanced.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proxy-advanced/src/main/java/com/yaojinwei/study/proxy/advanced/CountServiceImpl.java" afterPath="$PROJECT_DIR$/proxy-advanced/src/main/java/com/yaojinwei/study/proxy/advanced/CountServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proxy-advanced/src/main/java/com/yaojinwei/study/proxy/advanced/DynamicProxyPerformance.java" afterPath="$PROJECT_DIR$/proxy-advanced/src/main/java/com/yaojinwei/study/proxy/advanced/DynamicProxyPerformance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proxy-agent/proxy-agent.iml" afterPath="$PROJECT_DIR$/proxy-agent/proxy-agent.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proxy-begin/proxy-begin.iml" afterPath="$PROJECT_DIR$/proxy-begin/proxy-begin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proxy-common/proxy-common.iml" afterPath="$PROJECT_DIR$/proxy-common/proxy-common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proxy-study.iml" afterPath="$PROJECT_DIR$/proxy-study.iml" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ProcessEngineTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ProcessEngineTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ProcessEngineTest3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ProcessEngineTest4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ProcessEngineTest5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ProcessEngineTest6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ProcessEngineTest7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/TestA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/YjwProcessEnginePlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/YjwStandaloneProcessEngineConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ch10/AuditTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ch10/YjwTaskListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ch6/IdmTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ch7/ResourcesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ch8/DeploymentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ch8/custom.bpmn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ch9/RuntimeServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/spring/SpringProcessEngineTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/spring/SpringProcessEngineTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/spring/YjwSpringProcessEngineConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/META-INF/processes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/activiti-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/activiti-context2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/activiti2.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/camunda.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/camunda.ch10.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/camunda.ch6.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/camunda.ch7.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/camunda.ch9.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/diagram_1.bpmn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/diagram_3.bpmn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/leave.bpmn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/leave.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/leave1.bpmn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/leave2.bpmn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config-demo/src/main/java/com/yaojinwei/study/ConfigItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config-demo/src/main/java/com/yaojinwei/study/ConfigMetaData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config-demo/src/main/java/com/yaojinwei/study/DemoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config-demo/src/main/java/com/yaojinwei/study/DemoConfigItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-consumer/src/main/java/com/yaojinwei/study/dubbo/springboot/DubboAutoConfigurationConsumerBootstrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-consumer/src/main/resources/spring-config-dubbo-consumer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-consumer/src/main/resources/spring-config-dubbo-provider.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/Messages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/dto/Code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/dto/ListenerDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/dto/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/dto/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/dto/SpeakerDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/interfaces/SpeakInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-provider/src/main/java/com/yaojinwei/study/dubbo/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-provider/src/main/java/com/yaojinwei/study/dubbo/ProviderConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-provider/src/main/java/com/yaojinwei/study/dubbo/service/SpeakInterfaceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-springboot-provider/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/src/main/java/com/yaojinwei/study/es/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/src/main/java/com/yaojinwei/study/es/TestsConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/src/main/java/com/yaojinwei/study/es/test/TestEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/src/main/java/com/yaojinwei/study/es/test/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/src/main/java/com/yaojinwei/study/es/test/TestServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/src/main/java/com/yaojinwei/study/es/test/dao/TestDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/src/main/resources/ca.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/src/main/resources/elastic-certificates.p12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/src/test/java/JdbcTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/src/test/java/SqlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/src/test/resources/ca.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/src/test/resources/elastic-certificates.p12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elasticsearch-demo/src/test/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study/resources/META-INF/plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study/src/com/yaojinwei/test/TestAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/HelloWordAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/AbstractPicker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/PickApiContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/Picker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/domain/Annotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/domain/LooksApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/domain/LooksData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/domain/LooksRequestBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/domain/LooksRequestParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/lombok/LombokAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/mock/action/SendRestApiToLooksAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/mock/dto/MockApiDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/mock/dto/MockResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/spring/SpringAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/spring/SpringPicker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/swagger/SwaggerAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/util/HttpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/util/PsiDocUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/util/PsiJavaUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/util/PsiTypeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc-study/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc-study/src/main/java/com/yaojinwei/study/jdbc/JdbcTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc-study/src/main/java/com/yaojinwei/study/jdbc/LogDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc-study/src/main/resources/META-INF/services/java.sql.Driver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../osgi-study/src/main/java/com/yaojinwei/study/osgi/Activator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pandora-plugin-study/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pandora-plugin-study/src/main/java/com/yaojinwei/study/pandora/plugin/PluginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pandora-plugin-study/src/main/java/com/yaojinwei/study/pandora/plugin/TestCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pandora-plugin-study/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../serialize-study/hessian/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../serialize-study/hessian/src/main/java/com/yaojinwei/study/hessian/HessianTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../serialize-study/hessian/src/main/java/com/yaojinwei/study/hessian/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../serialize-study/hessian/src/main/java/com/yaojinwei/study/hessian/Student1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../serialize-study/hessian/src/main/java/com/yaojinwei/study/hessian/Student2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../serialize-study/hessian/src/main/java/com/yaojinwei/study/hessian/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../serialize-study/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../serialize-study/tbhessian/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../serialize-study/tbhessian/src/main/java/com/yaojinwei/study/tbhessian/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../serialize-study/tbhessian/src/main/java/com/yaojinwei/study/tbhessian/Student1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../serialize-study/tbhessian/src/main/java/com/yaojinwei/study/tbhessian/TbhessianTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../serialize-study/tbhessian/src/main/java/com/yaojinwei/study/tbhessian/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-cache-study/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-cache-study/src/main/java/com/yaojinwei/study/cache/CacheTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-cache-study/src/main/java/com/yaojinwei/study/cache/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-cache-study/src/main/java/com/yaojinwei/study/cache/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-configuration-study/src/main/java/com/yaojinwei/study/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/configuration/OrderStateMachineConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/configuration/OrderStateMachineFactoryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/constants/enums/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/constants/enums/OrderStatusChangeEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/listener/OrderStateListenerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/service/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/test/java/com/yaojinwei/demo/spring/statemachine/service/OrderServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/src/main/java/com/yaojinwei/demo/spring/cloud/stream/CustomTransactionListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/src/main/java/com/yaojinwei/demo/spring/cloud/stream/FooService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/src/main/java/com/yaojinwei/demo/spring/cloud/stream/MySink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/src/main/java/com/yaojinwei/demo/spring/cloud/stream/MySource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/src/main/java/com/yaojinwei/demo/spring/cloud/stream/StreamAApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/src/main/java/com/yaojinwei/demo/spring/cloud/stream/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-b/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swagger-demo/swagger-markdown-demo/src/main/java/com/yaojinwei/demo/swagger/markdown/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swagger-demo/swagger-markdown-demo/src/main/java/com/yaojinwei/demo/swagger/markdown/Remark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swagger-demo/swagger-markdown-demo/src/main/java/com/yaojinwei/demo/swagger/markdown/ResponseMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swagger-demo/swagger-markdown-demo/src/main/java/com/yaojinwei/demo/swagger/markdown/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo-study/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo-study/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo-study/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo-study/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo-study/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo-study/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo-study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo-study/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo-study/dubbo-study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo-study/dubbo-study.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo-study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo-study/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxt-dynamic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-cglib/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxt-dynamic/src/main/java/com/yaojinwei/study/proxy/CountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-cglib/src/main/java/com/yaojinwei/study/proxy/CountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxt-dynamic/src/main/java/com/yaojinwei/study/proxy/CountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-cglib/src/main/java/com/yaojinwei/study/proxy/CountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-advanced/proxy-advanced.iml" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-advanced/proxy-advanced.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-agent/proxy-agent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-agent/proxy-agent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-begin/proxy-begin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-begin/proxy-begin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/Assister.class" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/Assister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/Boss.class" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/Boss.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/MaYun.class" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/MaYun.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/ProxyMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/ProxyMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/cglib/AuthProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/cglib/AuthProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/cglib/AuthProxyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/cglib/AuthProxyFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/cglib/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/cglib/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/cglib/TableDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/cglib/TableDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/cglib/TableDAOFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/cglib/TableDAOFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/jdk/AssisterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/jdk/AssisterFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/jdk/AssisterHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-begin/target/classes/com/yaojinwei/study/proxy/jdk/AssisterHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-common/proxy-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-common/proxy-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-common/target/classes/com/yaojinwei/study/proxy/common/utils/ProxyUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-common/target/classes/com/yaojinwei/study/proxy/common/utils/ProxyUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy-study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/proxy-study.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-study/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-study/spring-boot-configuration-study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-study/spring-boot-configuration-study/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-study/spring-boot-configuration-study/src/main/java/com/yaojinwei/study/ConfigurationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-study/src/main/java/com/yaojinwei/study/spring/boot/SimpleApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-study/src/main/java/com/yaojinwei/study/spring/boot/config/WebMvcConfigure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-study/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-study/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-study/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/consumer/src/main/java/com/yaojinwei/demo/cloud/consumer/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/consumer/src/main/java/com/yaojinwei/demo/cloud/consumer/ConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/consumer/src/main/java/com/yaojinwei/demo/cloud/consumer/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/consumer/src/main/java/com/yaojinwei/demo/cloud/consumer/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/producer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/producer/src/main/java/com/yaojinwei/demo/cloud/producer/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/producer/src/main/java/com/yaojinwei/demo/cloud/producer/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/producer/src/main/java/com/yaojinwei/demo/cloud/producer/ProducerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/producer/src/main/java/com/yaojinwei/demo/cloud/producer/ProducerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/producer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/producer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/register-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/register-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/register-server/src/main/java/com/yaojinwei/study/cloud/register/server/RegisterServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/register-server/src/main/java/com/yaojinwei/study/cloud/register/server/RegisterServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/register-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/register-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swagger-demo/swagger-markdown-demo/src/main/java/com/yaojinwei/demo/swagger/markdown/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../swagger-demo/swagger-markdown-demo/src/main/java/com/yaojinwei/demo/swagger/markdown/UserController.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/proxy-common/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/proxy-advanced/target/" />
-    <ignored path="$PROJECT_DIR$/proxy-begin/target/" />
-    <ignored path="$PROJECT_DIR$/proxy-agent/target/" />
-    <ignored path="$PROJECT_DIR$/proxt-cglib/target/" />
-    <ignored path="$PROJECT_DIR$/proxt-dynamic/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proxt-dynamic/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DynamicProxyPerformance.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/proxy-advanced/src/main/java/com/yaojinwei/study/proxy/advanced/DynamicProxyPerformance.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proxy-advanced/src/main/java/com/yaojinwei/study/proxy/advanced/CountServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="e#262#263#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#311#312#0" expanded="true" />
-                <element signature="e#335#336#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProxyGenerator.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/sun/misc/ProxyGenerator.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="101" column="32" lean-forward="false" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileOutputStream.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/Java/jdk1.7.0_79/src.zip!/java/io/FileOutputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileDescriptor.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/Java/jdk1.7.0_79/src.zip!/java/io/FileDescriptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="50" column="29" lean-forward="false" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proxt-dynamic/src/main/java/com/yaojinwei/study/proxy/CountServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-              <folding>
-                <element signature="e#150#151#0" expanded="false" />
-                <element signature="e#185#186#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proxt-dynamic/src/main/java/com/yaojinwei/study/proxy/CountService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -144,6 +230,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -177,6 +271,7 @@
     <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectId" id="21ioS50KuPJe7knlzmuTXBvD6Qs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -514,135 +609,32 @@
       <pane id="Scratches" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.DynamicProxyPerformance">
-    <configuration default="false" name="DynamicProxyPerformanceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yaojinwei.study.proxy.dynamic.DynamicProxyPerformanceTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="proxt-dynamic" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="DynamicProxyPerformance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yaojinwei.study.proxy.advanced.DynamicProxyPerformance" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="proxy-advanced" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.ProxyMain">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
-      <option name="SCRATCH_FILE_ID" value="0" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
@@ -684,18 +676,11 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="" />
-      <envs />
-      <method />
+    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <method />
@@ -707,28 +692,81 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.DynamicProxyPerformanceTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.DynamicProxyPerformance" />
+    <configuration name="DynamicProxyPerformance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yaojinwei.study.proxy.advanced.DynamicProxyPerformance" />
+      <module name="proxy-advanced" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicProxyPerformanceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yaojinwei.study.proxy.dynamic.DynamicProxyPerformanceTest" />
+      <module name="proxt-dynamic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProxyMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yaojinwei.study.proxy.ProxyMain" />
+      <module name="proxy-begin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yaojinwei.study.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.DynamicProxyPerformanceTest" />
+      <item itemvalue="Application.DynamicProxyPerformance" />
+      <item itemvalue="Application.ProxyMain" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.DynamicProxyPerformance" />
-        <item index="1" class="java.lang.String" itemvalue="Application.DynamicProxyPerformanceTest" />
+      <list>
+        <item itemvalue="Application.ProxyMain" />
+        <item itemvalue="Application.DynamicProxyPerformance" />
+        <item itemvalue="Application.DynamicProxyPerformanceTest" />
       </list>
     </recent_temporary>
-    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-    </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1638433266879</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638433266879</updated>
+      <workItem from="1638433268847" duration="2333000" />
+    </task>
+    <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
@@ -783,27 +821,20 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://D:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/sun/misc/ProxyGenerator.class</url>
           <line>105</line>
-          <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/proxy-advanced/src/main/java/com/yaojinwei/study/proxy/advanced/DynamicProxyPerformance.java</url>
           <line>33</line>
-          <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

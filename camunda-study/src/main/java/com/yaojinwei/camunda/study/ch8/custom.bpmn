@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" id="definitions_f8eb05a6-f0c8-476c-abc8-f64b19b6e985" targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL" exporter="Camunda Modeler" exporterVersion="4.1.1">
+  <process id="leave" isExecutable="true">
+    <startEvent id="startEvent_0bb8c3a9-1f36-4d40-a941-8dfe7f7571d9" name="开始节点">
+      <outgoing>sequenceFlow_211aada0-b92d-4fe9-9abb-0aff3e7db484</outgoing>
+    </startEvent>
+    <userTask id="userTask_79ee3a31-3009-47cc-9685-f725173bfc95" name="申请人" camunda:candidateUsers="张三">
+      <incoming>sequenceFlow_211aada0-b92d-4fe9-9abb-0aff3e7db484</incoming>
+      <outgoing>sequenceFlow_f47f056e-eb14-45aa-8d21-8550a3831318</outgoing>
+    </userTask>
+    <sequenceFlow id="sequenceFlow_211aada0-b92d-4fe9-9abb-0aff3e7db484" sourceRef="startEvent_0bb8c3a9-1f36-4d40-a941-8dfe7f7571d9" targetRef="userTask_79ee3a31-3009-47cc-9685-f725173bfc95" />
+    <exclusiveGateway id="exclusiveGateway_5ae2f42a-452e-4baf-80a2-3a6f0eba4f84" name="排他网关">
+      <incoming>sequenceFlow_f47f056e-eb14-45aa-8d21-8550a3831318</incoming>
+      <outgoing>sequenceFlow_2629d268-19f0-4a31-9448-ac06611a2743</outgoing>
+      <outgoing>sequenceFlow_3a3f92ff-c490-4b80-9c4f-b5168b1409c4</outgoing>
+    </exclusiveGateway>
+    <sequenceFlow id="sequenceFlow_f47f056e-eb14-45aa-8d21-8550a3831318" sourceRef="userTask_79ee3a31-3009-47cc-9685-f725173bfc95" targetRef="exclusiveGateway_5ae2f42a-452e-4baf-80a2-3a6f0eba4f84" />
+    <sequenceFlow id="sequenceFlow_2629d268-19f0-4a31-9448-ac06611a2743" name="小于三天" sourceRef="exclusiveGateway_5ae2f42a-452e-4baf-80a2-3a6f0eba4f84" targetRef="userTask_0163a80d-4980-4cc0-8831-139f088681b2">
+      <conditionExpression id="conditionExpression_c2ba79a8-1692-469b-81e4-4be7629a2b0b">${day&lt;5}</conditionExpression>
+    </sequenceFlow>
+    <userTask id="userTask_0163a80d-4980-4cc0-8831-139f088681b2" name="组长审批" camunda:candidateUsers="李四">
+      <incoming>sequenceFlow_2629d268-19f0-4a31-9448-ac06611a2743</incoming>
+      <outgoing>sequenceFlow_f952046c-45bc-4e84-a607-e03f018e63af</outgoing>
+    </userTask>
+    <endEvent id="endEvent_a9773e27-9c58-4e9a-aa0f-64346bcb14c8">
+      <incoming>sequenceFlow_f952046c-45bc-4e84-a607-e03f018e63af</incoming>
+    </endEvent>
+    <sequenceFlow id="sequenceFlow_f952046c-45bc-4e84-a607-e03f018e63af" sourceRef="userTask_0163a80d-4980-4cc0-8831-139f088681b2" targetRef="endEvent_a9773e27-9c58-4e9a-aa0f-64346bcb14c8" />
+    <sequenceFlow id="sequenceFlow_3a3f92ff-c490-4b80-9c4f-b5168b1409c4" name="大于等于三天" sourceRef="exclusiveGateway_5ae2f42a-452e-4baf-80a2-3a6f0eba4f84" targetRef="userTask_51c3ec4f-3d82-4c4b-9337-65d809fe6a9b">
+      <conditionExpression id="conditionExpression_c1f6d458-1d52-44d3-98aa-45a879870987">${day&gt;=5}</conditionExpression>
+    </sequenceFlow>
+    <userTask id="userTask_51c3ec4f-3d82-4c4b-9337-65d809fe6a9b" name="组长审批" camunda:candidateUsers="李四">
+      <incoming>sequenceFlow_3a3f92ff-c490-4b80-9c4f-b5168b1409c4</incoming>
+      <outgoing>sequenceFlow_6bab5b66-8b2b-4d48-b2ec-576abd834e4f</outgoing>
+    </userTask>
+    <userTask id="userTask_45733908-7f66-4b7b-8041-7326f26361c4" name="项目经历审批" camunda:candidateUsers="王五">
+      <incoming>sequenceFlow_6bab5b66-8b2b-4d48-b2ec-576abd834e4f</incoming>
+      <outgoing>sequenceFlow_2800dd18-558b-4931-9a1e-d21464f7e5cf</outgoing>
+    </userTask>
+    <sequenceFlow id="sequenceFlow_6bab5b66-8b2b-4d48-b2ec-576abd834e4f" sourceRef="userTask_51c3ec4f-3d82-4c4b-9337-65d809fe6a9b" targetRef="userTask_45733908-7f66-4b7b-8041-7326f26361c4" />
+    <endEvent id="endEvent_9edcf735-aebc-42ea-9d6b-cd7551d6818c">
+      <incoming>sequenceFlow_2800dd18-558b-4931-9a1e-d21464f7e5cf</incoming>
+    </endEvent>
+    <sequenceFlow id="sequenceFlow_2800dd18-558b-4931-9a1e-d21464f7e5cf" sourceRef="userTask_45733908-7f66-4b7b-8041-7326f26361c4" targetRef="endEvent_9edcf735-aebc-42ea-9d6b-cd7551d6818c" />
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1bcc0edc-717a-49d8-97ce-e9e317b6489e">
+    <bpmndi:BPMNPlane id="BPMNPlane_e0690de1-5bd6-4e1d-a722-d16210a8156a" bpmnElement="leave">
+      <bpmndi:BPMNEdge id="BPMNEdge_7b84a28b-7f61-4e95-a46c-7bed221fa24b" bpmnElement="sequenceFlow_211aada0-b92d-4fe9-9abb-0aff3e7db484">
+        <di:waypoint x="201" y="120" />
+        <di:waypoint x="251" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_749b8bf9-8a01-4c7d-a694-cb525dfafc47" bpmnElement="sequenceFlow_f47f056e-eb14-45aa-8d21-8550a3831318">
+        <di:waypoint x="351" y="120" />
+        <di:waypoint x="401" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_80a7642b-0ebc-4693-8ecd-d136c1bbb5cc" bpmnElement="sequenceFlow_2629d268-19f0-4a31-9448-ac06611a2743">
+        <di:waypoint x="451" y="120" />
+        <di:waypoint x="501" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="454" y="95" width="44" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_822d5d5a-beca-42ba-b317-01a2f4a7aaa2" bpmnElement="sequenceFlow_3a3f92ff-c490-4b80-9c4f-b5168b1409c4">
+        <di:waypoint x="426" y="145" />
+        <di:waypoint x="426" y="250" />
+        <di:waypoint x="501" y="250" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="408" y="188" width="66" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_c44adfe9-439c-4481-bbc3-35918e4186a0" bpmnElement="sequenceFlow_f952046c-45bc-4e84-a607-e03f018e63af">
+        <di:waypoint x="601" y="120" />
+        <di:waypoint x="651" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_f4c730bf-ba6a-4f5c-81a7-eb188a064b7a" bpmnElement="sequenceFlow_6bab5b66-8b2b-4d48-b2ec-576abd834e4f">
+        <di:waypoint x="601" y="250" />
+        <di:waypoint x="651" y="250" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_d4bde3af-396c-4c15-9434-977037d1432e" bpmnElement="sequenceFlow_2800dd18-558b-4931-9a1e-d21464f7e5cf">
+        <di:waypoint x="751" y="250" />
+        <di:waypoint x="801" y="250" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="BPMNShape_f46c6b13-5e02-422f-a1d9-56e5aaae5baa" bpmnElement="startEvent_0bb8c3a9-1f36-4d40-a941-8dfe7f7571d9">
+        <dc:Bounds x="165" y="102" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="161" y="138" width="44" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_d4d622ff-52de-485f-8ffd-1453925a60ce" bpmnElement="userTask_79ee3a31-3009-47cc-9685-f725173bfc95">
+        <dc:Bounds x="251" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_8b7da76d-af9c-49cc-9cad-254239ef096e" bpmnElement="exclusiveGateway_5ae2f42a-452e-4baf-80a2-3a6f0eba4f84" isMarkerVisible="true">
+        <dc:Bounds x="401" y="95" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="404" y="145" width="44" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1d4977fe-110c-4ac2-bf45-cf79bf1c1267" bpmnElement="userTask_0163a80d-4980-4cc0-8831-139f088681b2">
+        <dc:Bounds x="501" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_e04b5ca7-734d-459b-83b6-51e985cd73c6" bpmnElement="endEvent_a9773e27-9c58-4e9a-aa0f-64346bcb14c8">
+        <dc:Bounds x="651" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_8a272fef-711a-4704-b5a7-b916497c9909" bpmnElement="userTask_51c3ec4f-3d82-4c4b-9337-65d809fe6a9b">
+        <dc:Bounds x="501" y="210" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_59107fe4-db93-40f7-977f-53eb4d9bc4dd" bpmnElement="userTask_45733908-7f66-4b7b-8041-7326f26361c4">
+        <dc:Bounds x="651" y="210" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_02315fc5-cf57-4f01-8da7-f26604f354e3" bpmnElement="endEvent_9edcf735-aebc-42ea-9d6b-cd7551d6818c">
+        <dc:Bounds x="801" y="232" width="36" height="36" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

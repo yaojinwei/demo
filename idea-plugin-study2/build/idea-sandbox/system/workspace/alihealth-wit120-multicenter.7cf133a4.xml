@@ -1,0 +1,54 @@
+<project version="4">
+  <component name="ExternalSystemProjectTracker">
+    <option name="projectSettingsTrackerStates">
+      <map>
+        <entry>
+          <key>
+            <Id>
+              <option name="externalProjectPath" value="alihealth-wit120-multicenter" />
+              <option name="systemId" value="MAVEN" />
+            </Id>
+          </key>
+          <value>
+            <Project>
+              <option name="settingsTracker">
+                <State>
+                  <option name="dirty" value="false" />
+                  <option name="settingsFiles">
+                    <map>
+                      <entry key="$PROJECT_DIR$/alihealth-wit120-multicenter-dal/pom.xml" value="3265396446" />
+                      <entry key="$PROJECT_DIR$/alihealth-wit120-multicenter-export/pom.xml" value="136689190" />
+                      <entry key="$PROJECT_DIR$/alihealth-wit120-multicenter-service/pom.xml" value="2322386819" />
+                      <entry key="$PROJECT_DIR$/alihealth-wit120-multicenter-start/pom.xml" value="1529401733" />
+                      <entry key="$PROJECT_DIR$/alihealth-wit120-multicenter-web/pom.xml" value="3736950043" />
+                      <entry key="$PROJECT_DIR$/multicenter-demo/pom.xml" value="2836960934" />
+                      <entry key="$PROJECT_DIR$/multicenter-ingroup/pom.xml" value="3141451070" />
+                      <entry key="$PROJECT_DIR$/multicenter-project/pom.xml" value="3508043720" />
+                      <entry key="$PROJECT_DIR$/multicenter-search/multicenter-search-client/pom.xml" value="1893161274" />
+                      <entry key="$PROJECT_DIR$/multicenter-search/multicenter-search-entity/pom.xml" value="960917406" />
+                      <entry key="$PROJECT_DIR$/multicenter-search/multicenter-search-service/pom.xml" value="4207892364" />
+                      <entry key="$PROJECT_DIR$/multicenter-search/multicenter-search-web/pom.xml" value="1527432172" />
+                      <entry key="$PROJECT_DIR$/multicenter-search/pom.xml" value="3370215424" />
+                      <entry key="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-api/pom.xml" value="2856167823" />
+                      <entry key="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-client/multicenter-tableone-client-dubbo/pom.xml" value="291668421" />
+                      <entry key="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-client/pom.xml" value="2468931549" />
+                      <entry key="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-server/multicenter-tableone-server-dubbo/pom.xml" value="733620056" />
+                      <entry key="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-server/pom.xml" value="4205207874" />
+                      <entry key="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-service/pom.xml" value="3639121629" />
+                      <entry key="$PROJECT_DIR$/multicenter-tableone/multicenter-tableone-web/pom.xml" value="929162880" />
+                      <entry key="$PROJECT_DIR$/multicenter-tableone/pom.xml" value="1152097004" />
+                      <entry key="$PROJECT_DIR$/pom.xml" value="508560404" />
+                    </map>
+                  </option>
+                </State>
+              </option>
+            </Project>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsLogIndexCollector">
+    <option name="indexTime" value="3084" />
+  </component>
+</project>

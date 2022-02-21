@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: dubbo-auto-configure-consumer-sample
+
+dubbo:
+  protocol:
+    name: injvm

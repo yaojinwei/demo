@@ -1,0 +1,38 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Mygit/demo/swagger-demo">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1gz1WOnDituFS5JqDSvHrxMqp1k">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-202.6397.94" />
+              <option name="buildTimestamp" value="1595846370481" />
+              <frame x="260" y="43" width="1400" height="961" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1599620390243" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/alihealth-wit120-multicenter">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="1gcTMjeE6YDummcWef0FNlB6x5I">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-202.6397.94" />
+              <option name="buildTimestamp" value="1595846350455" />
+              <frame x="0" y="0" width="1920" height="1080" fullScreen="true" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1601295199158" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/Projects/alihealth-wit120-multicenter" />
+        <option value="$USER_HOME$/Mygit/demo/swagger-demo" />
+      </list>
+    </option>
+  </component>
+</application>

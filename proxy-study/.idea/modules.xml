@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/proxt-dynamic/proxt-cglib.iml" filepath="$PROJECT_DIR$/proxt-dynamic/proxt-cglib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proxy-cglib/proxt-cglib.iml" filepath="$PROJECT_DIR$/proxy-cglib/proxt-cglib.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxy-advanced/proxy-advanced.iml" filepath="$PROJECT_DIR$/proxy-advanced/proxy-advanced.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxy-agent/proxy-agent.iml" filepath="$PROJECT_DIR$/proxy-agent/proxy-agent.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxy-begin/proxy-begin.iml" filepath="$PROJECT_DIR$/proxy-begin/proxy-begin.iml" />

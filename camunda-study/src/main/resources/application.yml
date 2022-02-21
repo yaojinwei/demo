@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+camunda.bpm:
+  admin-user:
+    id: kermit
+    password: superSecret
+    firstName: Kermit
+  filter:
+    create: All tasks

@@ -8,6 +8,8 @@
     <modules>
         <module>spring-boot-study-webapp</module>
         <module>spring-boot-configuration-study</module>
+        <module>spring-statemachine-study</module>
+        <module>spring-boot-cache-study</module>
     </modules>
     <name>spring-boot-study Maven Webapp</name>
     <url>http://maven.apache.org</url>
@@ -19,7 +21,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <mockito-all.version>1.10.19</mockito-all.version>
         <mybatis-starter.version>1.1.1</mybatis-starter.version>
-        <spring-boot.version>1.5.13.RELEASE</spring-boot.version>
+        <spring-boot.version>2.3.2.RELEASE</spring-boot.version>
         <maven-antrun.version>1.8</maven-antrun.version>
         <pandora-boot.version>2018-08-release-final</pandora-boot.version>
         <pandora-boot-maven-plugin.version>2.1.9.5</pandora-boot-maven-plugin.version>

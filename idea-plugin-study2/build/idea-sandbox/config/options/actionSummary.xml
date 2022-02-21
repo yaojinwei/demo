@@ -1,0 +1,111 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <data>
+      <entry key="$SelectAll">
+        <ActionSummary times="1" last="1600330517925" />
+      </entry>
+      <entry key="$Undo">
+        <ActionSummary times="7" last="1600860970097" />
+      </entry>
+      <entry key="ActivateStructureToolWindow">
+        <ActionSummary times="1" last="1599718322638" />
+      </entry>
+      <entry key="Back">
+        <ActionSummary times="7" last="1600861339414" />
+      </entry>
+      <entry key="ChangesView.Revert">
+        <ActionSummary times="1" last="1599652936344" />
+      </entry>
+      <entry key="CloseProject">
+        <ActionSummary times="1" last="1599620429111" />
+      </entry>
+      <entry key="CommentByLineComment">
+        <ActionSummary times="1" last="1600861340887" />
+      </entry>
+      <entry key="CopyReference">
+        <ActionSummary times="12" last="1599708763728" />
+      </entry>
+      <entry key="EditorBackSpace">
+        <ActionSummary times="17" last="1600314122459" />
+      </entry>
+      <entry key="EditorCopy">
+        <ActionSummary times="24" last="1600861066898" />
+      </entry>
+      <entry key="EditorEscape">
+        <ActionSummary times="1" last="1599724505483" />
+      </entry>
+      <entry key="EditorLineStart">
+        <ActionSummary times="3" last="1600860889907" />
+      </entry>
+      <entry key="EditorPaste">
+        <ActionSummary times="4" last="1600328273968" />
+      </entry>
+      <entry key="EditorSplitLine">
+        <ActionSummary times="1" last="1600860969229" />
+      </entry>
+      <entry key="Find">
+        <ActionSummary times="1" last="1599718420630" />
+      </entry>
+      <entry key="FindUsages">
+        <ActionSummary times="2" last="1599708444389" />
+      </entry>
+      <entry key="Forward">
+        <ActionSummary times="1" last="1599718353741" />
+      </entry>
+      <entry key="Generate">
+        <ActionSummary times="83" last="1601295257836" />
+      </entry>
+      <entry key="GotoDeclaration">
+        <ActionSummary times="15" last="1600861331787" />
+      </entry>
+      <entry key="GotoNextError">
+        <ActionSummary times="2" last="1600860909171" />
+      </entry>
+      <entry key="LocalHistory.ShowHistory">
+        <ActionSummary times="1" last="1599652923812" />
+      </entry>
+      <entry key="NewElement">
+        <ActionSummary times="3" last="1600314101835" />
+      </entry>
+      <entry key="NextWindow">
+        <ActionSummary times="1" last="1600270735828" />
+      </entry>
+      <entry key="RecentFiles">
+        <ActionSummary times="1" last="1599718147840" />
+      </entry>
+      <entry key="SearchEverywhere">
+        <ActionSummary times="9" last="1601284591241" />
+      </entry>
+      <entry key="ShowIntentionActions">
+        <ActionSummary times="1" last="1600860978700" />
+      </entry>
+      <entry key="Tree-selectChild">
+        <ActionSummary times="4" last="1599707811437" />
+      </entry>
+      <entry key="Tree-selectNext">
+        <ActionSummary times="5" last="1599707811764" />
+      </entry>
+      <entry key="Tree-selectPrevious">
+        <ActionSummary times="1" last="1599707811234" />
+      </entry>
+      <entry key="WelcomeScreen.OpenProject">
+        <ActionSummary times="2" last="1599620431860" />
+      </entry>
+      <entry key="com.intellij.find.editorHeaderActions.NextOccurrenceAction">
+        <ActionSummary times="15" last="1599718433550" />
+      </entry>
+      <entry key="com.intellij.ide.ReopenProjectAction">
+        <ActionSummary times="2" last="1600939228457" />
+      </entry>
+      <entry key="com.intellij.ide.actions.searcheverywhere.SearchEverywhereUI$SETab$1">
+        <ActionSummary times="1" last="1600328256954" />
+      </entry>
+      <entry key="com.intellij.ide.projectView.impl.ProjectViewImpl$ScrollFromSourceAction">
+        <ActionSummary times="14" last="1600333240377" />
+      </entry>
+      <entry key="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
+        <ActionSummary times="5" last="1600330520582" />
+      </entry>
+    </data>
+  </component>
+</application>
