@@ -10,3 +10,4 @@ logs
 run
 *.zip
 *.gz
+*.log
