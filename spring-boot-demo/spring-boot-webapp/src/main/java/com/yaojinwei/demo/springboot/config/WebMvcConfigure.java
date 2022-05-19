@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 import java.io.File;
 
-@Configuration
+//@Configuration
 public class WebMvcConfigure extends WebMvcConfigurerAdapter {
 
     @Value("${tomcat.server.document-root}")

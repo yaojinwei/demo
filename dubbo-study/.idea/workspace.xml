@@ -5,143 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9289f382-b592-4347-89e9-6412d48c36b6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../camunda-study/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ProcessEngineTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ProcessEngineTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ProcessEngineTest3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ProcessEngineTest4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ProcessEngineTest5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ProcessEngineTest6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ProcessEngineTest7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/TestA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/YjwProcessEnginePlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/YjwStandaloneProcessEngineConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ch10/AuditTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ch10/YjwTaskListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ch6/IdmTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ch7/ResourcesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ch8/DeploymentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ch8/custom.bpmn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/ch9/RuntimeServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/spring/SpringProcessEngineTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/spring/SpringProcessEngineTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/java/com/yaojinwei/camunda/study/spring/YjwSpringProcessEngineConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/META-INF/processes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/activiti-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/activiti-context2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/activiti2.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/camunda.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/camunda.ch10.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/camunda.ch6.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/camunda.ch7.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/camunda.ch9.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/diagram_1.bpmn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/diagram_3.bpmn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/leave.bpmn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/leave.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/leave1.bpmn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/leave2.bpmn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-consumer/src/main/java/com/yaojinwei/study/dubbo/springboot/DubboAutoConfigurationConsumerBootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-consumer/src/main/resources/spring-config-dubbo-consumer.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-consumer/src/main/resources/spring-config-dubbo-provider.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-interface/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/Messages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/dto/Code.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/dto/ListenerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/dto/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/dto/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/dto/SpeakerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-interface/src/main/java/com/yaojinwei/study/dubbo/interfaces/SpeakInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-provider/src/main/java/com/yaojinwei/study/dubbo/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-provider/src/main/java/com/yaojinwei/study/dubbo/ProviderConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-provider/src/main/java/com/yaojinwei/study/dubbo/service/SpeakInterfaceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-springboot-provider/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study/resources/META-INF/plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study/src/com/yaojinwei/test/TestAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/HelloWordAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/AbstractPicker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/PickApiContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/Picker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/domain/Annotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/domain/LooksApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/domain/LooksData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/domain/LooksRequestBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/domain/LooksRequestParameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/lombok/LombokAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/mock/action/SendRestApiToLooksAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/mock/dto/MockApiDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/mock/dto/MockResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/spring/SpringAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/spring/SpringPicker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/swagger/SwaggerAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/util/HttpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/util/PsiDocUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/util/PsiJavaUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/java/com/alihealth/nukes/util/PsiTypeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../idea-plugin-study2/src/main/resources/META-INF/plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/configuration/OrderStateMachineConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/configuration/OrderStateMachineFactoryConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/constants/enums/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/constants/enums/OrderStatusChangeEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/listener/OrderStateListenerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/java/com/yaojinwei/demo/spring/statemachine/service/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-study/spring-statemachine-study/src/test/java/com/yaojinwei/demo/spring/statemachine/service/OrderServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/src/main/java/com/yaojinwei/demo/spring/cloud/stream/CustomTransactionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/src/main/java/com/yaojinwei/demo/spring/cloud/stream/FooService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/src/main/java/com/yaojinwei/demo/spring/cloud/stream/MySink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/src/main/java/com/yaojinwei/demo/spring/cloud/stream/MySource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/src/main/java/com/yaojinwei/demo/spring/cloud/stream/StreamAApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/src/main/java/com/yaojinwei/demo/spring/cloud/stream/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-a/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-cloud-study/stream/stream-b/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../swagger-demo/swagger-markdown-demo/src/main/java/com/yaojinwei/demo/swagger/markdown/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../swagger-demo/swagger-markdown-demo/src/main/java/com/yaojinwei/demo/swagger/markdown/Remark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../swagger-demo/swagger-markdown-demo/src/main/java/com/yaojinwei/demo/swagger/markdown/ResponseMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../swagger-demo/swagger-markdown-demo/src/main/java/com/yaojinwei/demo/swagger/markdown/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../akka-study/src/main/java/com/yaojinwei/study/akka/SenderActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../camunda-study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../camunda-study/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../camunda-study/src/main/resources/diagram_3.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/diagram_3.bpmn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../camunda-study/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../camunda-study/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-study.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-study/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-study/src/main/java/com/yaojinwei/study/spring/boot/SimpleApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-study/src/main/java/com/yaojinwei/study/spring/boot/config/WebMvcConfigure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-study/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-study/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-study/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/consumer/src/main/java/com/yaojinwei/demo/cloud/consumer/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/consumer/src/main/java/com/yaojinwei/demo/cloud/consumer/ConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/consumer/src/main/java/com/yaojinwei/demo/cloud/consumer/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/consumer/src/main/java/com/yaojinwei/demo/cloud/consumer/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/producer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/producer/src/main/java/com/yaojinwei/demo/cloud/producer/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/producer/src/main/java/com/yaojinwei/demo/cloud/producer/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/producer/src/main/java/com/yaojinwei/demo/cloud/producer/ProducerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/producer/src/main/java/com/yaojinwei/demo/cloud/producer/ProducerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/producer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/producer/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/register-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/register-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/register-server/src/main/java/com/yaojinwei/study/cloud/register/server/RegisterServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/register-server/src/main/java/com/yaojinwei/study/cloud/register/server/RegisterServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-study/register-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-study/microservice/register-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../swagger-demo/swagger-markdown-demo/src/main/java/com/yaojinwei/demo/swagger/markdown/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../swagger-demo/swagger-markdown-demo/src/main/java/com/yaojinwei/demo/swagger/markdown/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +47,6 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
         <option name="userSettingsFile" value="$USER_HOME$/Maven/letv/settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -191,17 +58,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Users/yaojinwei/.m2/repository/com/alibaba/dubbo/2.8.4.2/dubbo-2.8.4.2-sources.jar!/com/alibaba/dubbo/config/ServiceConfig.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dubbo-springboot-consumer/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
@@ -259,6 +126,40 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
@@ -377,45 +278,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.provider" />
       <item itemvalue="Application.App" />
       <item itemvalue="Application.DubboAutoConfigurationConsumerBootstrap" />
       <item itemvalue="Application.consumer" />
-      <item itemvalue="Application.provider" />
       <item itemvalue="JUnit.BaseTest.test" />
       <item itemvalue="JUnit.UserInterfaceTest.test" />
     </list>
@@ -448,6 +315,7 @@
       <workItem from="1480946757910" duration="3059000" />
       <workItem from="1487377297809" duration="6067000" />
       <workItem from="1586227868294" duration="4562000" />
+      <workItem from="1650440468111" duration="1141000" />
     </task>
     <servers />
   </component>
@@ -505,72 +373,6 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="320" y="19" key="#Project_Structure" timestamp="1602237421605">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="320" y="19" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1602237421605" />
-    <state x="726" y="195" key="#com.intellij.ide.util.MemberChooser" timestamp="1602236565835">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="726" y="195" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1602236565835" />
-    <state x="388" y="458" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1602240196914">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="388" y="458" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602240196914" />
-    <state width="1868" height="212" key="GridCell.Tab.0.bottom" timestamp="1602315442917">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1868" height="212" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602315442917" />
-    <state width="1868" height="212" key="GridCell.Tab.0.center" timestamp="1602315442913">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1868" height="212" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602315442913" />
-    <state width="1868" height="212" key="GridCell.Tab.0.left" timestamp="1602315442912">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1868" height="212" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602315442912" />
-    <state width="1868" height="212" key="GridCell.Tab.0.right" timestamp="1602315442915">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1868" height="212" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602315442915" />
-    <state width="1868" height="344" key="GridCell.Tab.1.bottom" timestamp="1602315442900">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1868" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602315442900" />
-    <state width="1868" height="344" key="GridCell.Tab.1.center" timestamp="1602315442897">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1868" height="344" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602315442897" />
-    <state width="1868" height="344" key="GridCell.Tab.1.left" timestamp="1602315442896">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1868" height="344" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602315442896" />
-    <state width="1868" height="344" key="GridCell.Tab.1.right" timestamp="1602315442899">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1868" height="344" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602315442899" />
-    <state x="512" y="253" key="NewModule_or_Project.wizard" timestamp="1602240705066">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="512" y="253" key="NewModule_or_Project.wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1602240705066" />
-    <state x="320" y="19" key="SettingsEditor" timestamp="1602243143430">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="320" y="19" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1602243143430" />
-    <state x="588" y="232" width="744" height="616" key="find.popup" timestamp="1602243171393">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="588" y="232" width="744" height="616" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602243171393" />
-    <state x="196" y="252" key="new project wizard" timestamp="1602237451715">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="196" y="252" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1602237451715" />
-    <state x="541" y="48" width="838" height="1032" key="search.everywhere.popup" timestamp="1602295206928">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="541" y="48" width="838" height="1032" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602295206928" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
