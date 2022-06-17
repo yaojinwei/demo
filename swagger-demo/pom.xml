@@ -17,7 +17,7 @@
 
     <properties>
         <swagger.version>2.7.0</swagger.version>
-        <fastjson.version>1.2.47</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <spring-boot.version>1.5.13.RELEASE</spring-boot.version>
     </properties>
 
