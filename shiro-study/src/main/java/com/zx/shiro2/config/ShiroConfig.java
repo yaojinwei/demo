@@ -1,6 +1,8 @@
 package com.zx.shiro2.config;
 
-import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
@@ -9,34 +11,33 @@ import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreato
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @Configuration
 public class ShiroConfig {
     //Shiro的方言
-    @Bean
-    public ShiroDialect getShiroDialect(){
-        return new ShiroDialect();
-    }
+    //@Bean
+    //public ShiroDialect getShiroDialect(){
+    //    return new ShiroDialect();
+    //}
     //使Shiro的注解可以加载执行
     @Bean
-    public DefaultAdvisorAutoProxyCreator getDefaultAdvisorAutoProxyCreator(){
-        DefaultAdvisorAutoProxyCreator autoProxyCreator=new DefaultAdvisorAutoProxyCreator();
+    public DefaultAdvisorAutoProxyCreator getDefaultAdvisorAutoProxyCreator() {
+        DefaultAdvisorAutoProxyCreator autoProxyCreator = new DefaultAdvisorAutoProxyCreator();
         autoProxyCreator.setProxyTargetClass(true);
         return autoProxyCreator;
     }
+
     //权限注解加载
     @Bean
-    public AuthorizationAttributeSourceAdvisor getAuthorizationAttributeSourceAdvisor(DefaultWebSecurityManager defaultWebSecurityManager){
-        AuthorizationAttributeSourceAdvisor advisor=new AuthorizationAttributeSourceAdvisor();
+    public AuthorizationAttributeSourceAdvisor getAuthorizationAttributeSourceAdvisor(
+        DefaultWebSecurityManager defaultWebSecurityManager) {
+        AuthorizationAttributeSourceAdvisor advisor = new AuthorizationAttributeSourceAdvisor();
         advisor.setSecurityManager(defaultWebSecurityManager);
         return advisor;
     }
 
     @Bean
-    public HashedCredentialsMatcher getHashedCredentialsMatcher(){
-        HashedCredentialsMatcher matcher=new HashedCredentialsMatcher();
+    public HashedCredentialsMatcher getHashedCredentialsMatcher() {
+        HashedCredentialsMatcher matcher = new HashedCredentialsMatcher();
         //matcher就是用来指定加密规则
         //加密方式
         matcher.setHashAlgorithmName("md5");
@@ -47,41 +48,43 @@ public class ShiroConfig {
 
     //自定义Realm
     @Bean
-    public MyRealm getMyRealm(HashedCredentialsMatcher matcher){
-        MyRealm myRealm=new MyRealm();
+    public MyRealm getMyRealm(HashedCredentialsMatcher matcher) {
+        MyRealm myRealm = new MyRealm();
         //设置加密规则
         myRealm.setCredentialsMatcher(matcher);
         return myRealm;
     }
+
     //SecurityManager安全管理器
     @Bean
-    public DefaultWebSecurityManager getDefaultWebSecurityManager(MyRealm myRealm){
-        DefaultWebSecurityManager securityManager=new DefaultWebSecurityManager();
+    public DefaultWebSecurityManager getDefaultWebSecurityManager(MyRealm myRealm) {
+        DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
         //securityManager要完成校验，需要realm
         securityManager.setRealm(myRealm);
         return securityManager;
     }
+
     //过滤器
     @Bean
-    public ShiroFilterFactoryBean getShiroFilterFactoryBean(DefaultWebSecurityManager defaultWebSecurityManager){
-        ShiroFilterFactoryBean filter=new ShiroFilterFactoryBean();
+    public ShiroFilterFactoryBean getShiroFilterFactoryBean(DefaultWebSecurityManager defaultWebSecurityManager) {
+        ShiroFilterFactoryBean filter = new ShiroFilterFactoryBean();
         filter.setSecurityManager(defaultWebSecurityManager);
         //设置shiro的拦截规则
         //anon 匿名用户可访问   authc  认证用户可访问
         //user 使用RemeberMe的用户可访问  perms  对应权限可访问
         //role  对应的角色可访问
-        Map<String,String> filterMap=new HashMap<>();
-        filterMap.put("/","anon");
-        filterMap.put("/login.html","anon");
-        filterMap.put("/register.html","anon");
-        filterMap.put("/user/login","anon");
-        filterMap.put("/user/register","anon");
-        filterMap.put("/static/**","anon");
-        filterMap.put("/**","authc");
+        Map<String, String> filterMap = new HashMap<>();
+        filterMap.put("/", "anon");
+        filterMap.put("/login.html", "anon");
+        filterMap.put("/register.html", "anon");
+        filterMap.put("/user/login", "anon");
+        filterMap.put("/user/register", "anon");
+        filterMap.put("/static/**", "anon");
+        filterMap.put("/**", "authc");
         //退出登录
-        filterMap.put("/logout","logout");
+        filterMap.put("/logout", "logout");
         //c_add.html页面在有sys:c:save权限下可访问
-        filterMap.put("/c_add.html","perms[sys:c:save]");
+        filterMap.put("/c_add.html", "perms[sys:c:save]");
         filter.setFilterChainDefinitionMap(filterMap);
 
         filter.setLoginUrl("/login.html");
@@ -89,7 +92,5 @@ public class ShiroConfig {
         filter.setUnauthorizedUrl("/error.html");
         return filter;
     }
-
-
 
 }

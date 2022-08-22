@@ -18,7 +18,7 @@ import org.apache.flink.util.Collector;
  *
  * @author Yao Jinwei (jinwei.yjw@alibaba-inc.com)
  */
-public class WordCount6 {
+public class WordCount8 {
     public static void main(String[] args) throws Exception {
         Configuration configuration = new Configuration();
         // 指定端口

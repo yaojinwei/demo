@@ -1,7 +1,6 @@
 package com.yaojinwei.study;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
-import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
@@ -15,10 +14,10 @@ import org.apache.flink.util.Collector;
  * <artifactId>flink-runtime-web_2.11</artifactId>
  * <version>${flink.version}</version>
  * </dependency>
- *
+ *  flink -run  -c com.yaojinwei.study.WordCount2 --hostname 127.0.0.1 --port 8081
  * @author Yao Jinwei (jinwei.yjw@alibaba-inc.com)
  */
-public class WordCount6 {
+public class WordCount2 {
     public static void main(String[] args) throws Exception {
         Configuration configuration = new Configuration();
         // 指定端口
@@ -33,9 +32,9 @@ public class WordCount6 {
         //2. 数据源
         DataStream<String> stringDataStream = environmentWithWebUI.socketTextStream("127.0.0.1", 999);
         //3. ETL逻辑
-        SingleOutputStreamOperator<Tuple2<String, Integer>> sum = stringDataStream
+        SingleOutputStreamOperator<Word> sum = stringDataStream
             .flatMap(new SplitTask())
-            .keyBy(0).sum(1)
+            .keyBy("word1").sum("count")
             .setParallelism(2);
 
         sum.print();
@@ -43,13 +42,13 @@ public class WordCount6 {
         environmentWithWebUI.execute("job1");
     }
 
-    public static class SplitTask implements FlatMapFunction<String, Tuple2<String, Integer>> {
+    public static class SplitTask implements FlatMapFunction<String, Word> {
 
         @Override
-        public void flatMap(String value,  Collector<Tuple2<String, Integer>> out) {
+        public void flatMap(String value,  Collector<Word> out) {
             String[] values = value.split(",");
             for (String word : values) {
-                out.collect(Tuple2.of(word, 1));
+                out.collect(new Word(word, 1));
             }
 
         }
@@ -58,6 +57,9 @@ public class WordCount6 {
     public static class Word {
         private String word1;
         private Integer count;
+        //这个必须要有，否则会报 This type (GenericType<com.yaojinwei.study.WordCount2.Word>) cannot be used as key.
+        public Word() {
+        }
 
         public Word(String word, Integer count) {
             this.word1 = word;

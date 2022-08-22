@@ -3,7 +3,7 @@
     <!-- https://github.com/spring-projects/spring-boot/blob/v1.5.13.RELEASE/spring-boot/src/main/resources/org/springframework/boot/logging/logback/defaults.xml -->
     <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
     <!-- 应用名-->
-    <property name="APP_NAME" value="alihealth-wise-framework"/>
+    <property name="APP_NAME" value="spring-proxy-test"/>
 
     <!-- 日志路径，区分开发环境-->
     <property name="logback.dir" value="/${user.home}/logs/${APP_NAME}/logs"/>

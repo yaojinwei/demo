@@ -12,8 +12,12 @@
         <module>spring-boot-webapp</module>
         <module>spring-bean-lifecycle</module>
         <module>spring-bean-order</module>
+        <module>spring-proxy-test</module>
     </modules>
 
+    <properties>
+        <pandora-boot.version>2021-07-release</pandora-boot.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -21,7 +25,15 @@
                 <!-- Import dependency management from Spring Boot -->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>1.4.2.RELEASE</version>
+                <version>1.5.22.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taobao.pandora</groupId>
+                <artifactId>pandora-boot-starter-bom</artifactId>
+                <version>${pandora-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
