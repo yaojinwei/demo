@@ -36,7 +36,7 @@ public class ApplicationTest {
             .withoutInlineSchema()
             .build();
 
-        Swagger2MarkupConverter.from(new URL("http://localhost:8080/v2/api-docs"))
+        Swagger2MarkupConverter.from(new URL("http://localhost:10004/v2/api-docs"))
             .withConfig(config)
             .build()
             .toFolder(Paths.get("./docs/asciidoc/generated"));
@@ -51,7 +51,7 @@ public class ApplicationTest {
             .withGeneratedExamples()
             .withoutInlineSchema()				.build();
 
-        Swagger2MarkupConverter.from(new URL("http://localhost:8080/v2/api-docs"))
+        Swagger2MarkupConverter.from(new URL("http://localhost:10004/v2/api-docs"))
             .withConfig(config)
             .build()
             .toFile(Paths.get("./docs/asciidoc/generated/all"));
@@ -102,7 +102,7 @@ public class ApplicationTest {
             .withGeneratedExamples()
             .withoutInlineSchema().build();
 
-        Swagger2MarkupConverter.from(new URL("http://localhost:8080/v2/api-docs"))
+        Swagger2MarkupConverter.from(new URL("http://localhost:10004/v2/api-docs"))
             .withConfig(config)
             .build()
             .toFolder(Paths.get("./docs/markdown/generated"));

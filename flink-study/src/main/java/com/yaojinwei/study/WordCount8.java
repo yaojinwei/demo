@@ -26,16 +26,18 @@ public class WordCount8 {
 
         //指定 Flink Web UI 端口为9091
         configuration.setInteger("rest.port", 9091);
-        //1.程序入口
+        //1.程序入口 无论是本地，还是集群，入口都是一样的
         StreamExecutionEnvironment environmentWithWebUI
-            = StreamExecutionEnvironment.createLocalEnvironmentWithWebUI(configuration);
+            = StreamExecutionEnvironment.getExecutionEnvironment();
         environmentWithWebUI.setParallelism(2);
         //2. 数据源
-        DataStream<String> stringDataStream = environmentWithWebUI.socketTextStream("127.0.0.1", 999);
+        DataStream<String> stringDataStream = environmentWithWebUI.socketTextStream("30.79.193.100", 999);
         //3. ETL逻辑
         SingleOutputStreamOperator<Tuple2<String, Integer>> sum = stringDataStream
             .flatMap(new SplitTask())
-            .keyBy(0).sum(1)
+            .setParallelism(3)
+            .keyBy(0)
+            .sum(1)
             .setParallelism(2);
 
         sum.print();
@@ -58,6 +60,9 @@ public class WordCount8 {
     public static class Word {
         private String word1;
         private Integer count;
+
+        public Word() {
+        }
 
         public Word(String word, Integer count) {
             this.word1 = word;

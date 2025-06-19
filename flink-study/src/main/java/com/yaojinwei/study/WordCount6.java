@@ -58,7 +58,7 @@ public class WordCount6 {
     public static class Word {
         private String word1;
         private Integer count;
-
+        //这个必须要有，否则会报 This type (GenericType<com.yaojinwei.study.WordCount2.Word>) cannot be used as key.
         public Word(String word, Integer count) {
             this.word1 = word;
             this.count = count;
